@@ -52,7 +52,7 @@ export default {
   },
 
   'google-gtag': {
-    id: 'UA-XXXX-XX',
+    id: 'G-LX2NQNSX28',
     debug: false
   }
 }
