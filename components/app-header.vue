@@ -19,11 +19,6 @@
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink :to="'/over'">
-              Over
-            </NuxtLink>
-          </li>
-          <li>
             <NuxtLink :to="'/products'">
               Shop
             </NuxtLink>
@@ -32,7 +27,7 @@
       </nav>
     </div>
     <div v-if="!noImg" class="header__image">
-      <img :src="image" alt="header-image" />
+      <img :src="image" />
       <div class="header__title">
         <slot></slot>
       </div>
@@ -53,8 +48,7 @@ export default {
     },
     image: {
       type: String,
-      default:
-        "https://www.digitalbart.nl/wptest/wp-content/uploads/2020/06/header.jpg",
+      default: require(`~/assets/images/flamingo-home-bg.jpg`),
     },
   },
 };
@@ -138,7 +132,7 @@ nav.main-nav {
       background: var(--color-dark);
       width: 100%;
       height: 100%;
-      opacity: 0.8;
+      opacity: 0.7;
     }
   }
 

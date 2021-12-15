@@ -35,7 +35,7 @@ export default {
 <style lang="scss" scoped>
 .product-item {
   width: 100%;
-  background: #f1e3e1;
+  background: pink;
   border-radius: 12px;
 
   &__title {

@@ -1,12 +1,14 @@
 <template>
   <div>
-    <app-header :isBig="true">
+    <app-header
+      :isBig="true"
+      :image="require(`~/assets/images/flamingo-home-bg.jpg`)"
+    >
       <h1>
-        Bart art
+        Flamingo shop
       </h1>
       <h2>
-        De website voor alle informatie over het leren van (digitaal) leren
-        tekenen
+        De leukse flamingo spullen verzameld op een plek
       </h2>
     </app-header>
     <div class="content-wrapper page-content">
