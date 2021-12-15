@@ -6,24 +6,6 @@
       </NuxtLink>
     </div>
     <div class="blog-item__inner">
-      <div class="blog-item__meta">
-        <div class="blog-item__meta-entry">
-          <img
-            class="icon"
-            src="~/assets/icons/feather/calendar.svg"
-            alt="calender-icon"
-          />
-          {{ item.createdAt | formatDate("dd MMM yyyy") }}
-        </div>
-        <div class="blog-item__meta-entry">
-          <img
-            class="icon"
-            src="~/assets/icons/feather/user.svg"
-            alt="author-icon"
-          />
-          {{ item.author }}
-        </div>
-      </div>
       <div class="blog-item__title">
         <h2>
           <NuxtLink :to="{ name: 'blog-slug', params: { slug: item.slug } }">{{
@@ -32,7 +14,7 @@
         </h2>
       </div>
       <div class="blog-item__summary">
-        <p>{{ item.intro }}</p>
+        <p class="small">{{ item.intro }}</p>
       </div>
       <div class="blog-item__bottom">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: item.slug } }">
@@ -54,36 +36,22 @@ export default {
 <style lang="scss">
 .blog-item {
   width: 100%;
-  background: #f3f3f3;
-  border-radius: 4px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  background: #f1e3e1;
+  border-radius: 12px;
+  overflow: hidden;
 
   &__title {
     margin: 14px 0 8px;
   }
 
-  &__summary {
-    min-height: 50px;
-  }
-
   &__inner {
-    padding: 10px 16px 20px;
+    padding: 10px 22px 20px;
   }
 
   &__meta {
     display: flex;
     margin-top: 12px;
     font-size: 13px;
-  }
-
-  &__meta-entry {
-    margin-right: 16px;
-    display: flex;
-    align-items: center;
-
-    .icon {
-      margin-right: 5px;
-    }
   }
 
   &__image {
@@ -117,18 +85,13 @@ export default {
   }
 
   &__bottom {
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 8px;
 
     a {
-      display: block;
-      background: var(--color-primary);
-      color: #fff;
-      padding: 10px 14px 11px;
+      color: var(--color-primary);
       border-radius: 4px;
+      font-weight: bold;
       font-size: 14px;
-      cursor: pointer;
     }
   }
 }

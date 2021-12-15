@@ -1,12 +1,14 @@
 <template>
-  <div class="product" v-if="product">
-    <div class="product__image">
-      <NuxtLink :to="{ name: 'products-slug', params: { slug: product.slug } }">
-        <img :src="`/images/${product.img}`" alt="" />
-      </NuxtLink>
-    </div>
-    <div class="product__inner">
-      <div class="product__title">
+  <div class="product-item" v-if="product">
+    <div class="product-item__inner">
+      <div class="product-item__image">
+        <NuxtLink
+          :to="{ name: 'products-slug', params: { slug: product.slug } }"
+        >
+          <img :src="`/images/${product.img}`" alt="" />
+        </NuxtLink>
+      </div>
+      <div class="product-item__title">
         <h3>
           <NuxtLink
             :to="{ name: 'products-slug', params: { slug: product.slug } }"
@@ -14,7 +16,8 @@
           >
         </h3>
       </div>
-      <div class="product__price">
+      <!-- #f1786f -->
+      <div class="product-item__price">
         <p>&#8364; {{ product.price }}</p>
       </div>
     </div>
@@ -30,11 +33,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.product {
+.product-item {
   width: 100%;
-  background: #f3f3f3;
-  border-radius: 4px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  background: #f1e3e1;
+  border-radius: 12px;
 
   &__title {
     font-size: 14px;
@@ -46,19 +48,22 @@ export default {
   }
 
   &__inner {
-    padding: 14px 16px 12px;
+    padding: 20px 20px 16px;
   }
 
   &__image {
     max-width: 100%;
     height: 250px;
-    padding: 20px;
-    background: white;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    overflow: hidden;
 
     a {
       position: relative;
       display: block;
       height: 100%;
+      background: white;
+      padding: 20px;
     }
 
     img {

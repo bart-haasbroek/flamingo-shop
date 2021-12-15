@@ -82,16 +82,16 @@ nav.main-nav {
         transition: 0.4s ease;
         text-decoration: none;
         font-weight: bold;
-        color: #00d1b2;
+        color: var(--color-dark);
         border-bottom: 2px solid transparent;
 
         &.nuxt-link-exact-active {
-          border-color: #1d1d1d;
-          color: #1d1d1d;
+          border-color: var(--color-dark);
+          color: var(--color-dark);
         }
 
         &:hover {
-          color: #1d1d1d;
+          color: white;
         }
       }
     }
@@ -100,7 +100,7 @@ nav.main-nav {
 .header {
   position: relative;
   width: 100%;
-  background: #efefef;
+  background: #f1786f;
 
   &__top {
     padding: 10px;
@@ -121,7 +121,7 @@ nav.main-nav {
     width: 60px;
     height: 60px;
     cursor: pointer;
-    background: red;
+    background: var(--color-dark);
   }
 
   &__image {

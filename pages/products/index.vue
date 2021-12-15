@@ -13,37 +13,6 @@
             :key="article.slug"
             :product="article"
           ></product-item>
-
-          <product-item
-            v-for="article of articles"
-            :key="article.slug"
-            :product="article"
-          ></product-item>
-          <product-item
-            v-for="article of articles"
-            :key="article.slug"
-            :product="article"
-          ></product-item>
-          <product-item
-            v-for="article of articles"
-            :key="article.slug"
-            :product="article"
-          ></product-item>
-          <product-item
-            v-for="article of articles"
-            :key="article.slug"
-            :product="article"
-          ></product-item>
-          <product-item
-            v-for="article of articles"
-            :key="article.slug"
-            :product="article"
-          ></product-item>
-          <product-item
-            v-for="article of articles"
-            :key="article.slug"
-            :product="article"
-          ></product-item>
         </app-grid>
       </div>
     </div>
