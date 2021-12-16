@@ -3,7 +3,7 @@
     <div class="d-flex align-items-center header__top content-wrapper">
       <div class="header__logo">
         <NuxtLink to="/">
-          <img src="assets/images/logo.svg" alt="" />
+          <!-- <img src="assets/images/logo.svg" alt="" /> -->
         </NuxtLink>
       </div>
       <nav class="main-nav d-flex justify-content-end flex-grow-1">

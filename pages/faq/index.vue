@@ -34,7 +34,7 @@ export default {
   },
   async asyncData({ $content }) {
     const page = await $content("pages")
-      .where({ title: "Over mij" })
+      .where({ slug: "faq" })
       .fetch();
     return { page: page[0] };
   },

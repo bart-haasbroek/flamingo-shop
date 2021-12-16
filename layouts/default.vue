@@ -7,23 +7,41 @@
       <div class="content-wrapper">
         <app-grid :columns="3">
           <div class="footer__col">
-            <h3 class="footer__title">
-              Meest recente berichten
-            </h3>
+            <h4 class="footer__title">
+              Laatste blogs
+            </h4>
             <ul class="footer__list">
               <li v-for="article of articles" :key="article.slug">
                 <NuxtLink
-                  class="hover-underline"
                   :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-                  >{{ article.title }}</NuxtLink
-                >
+                  >{{ article.title }}
+                </NuxtLink>
               </li>
             </ul>
           </div>
           <div class="footer__col">
-            <h3 class="footer__title">
-              Categorieën
-            </h3>
+            <h4 class="footer__title">
+              Over ons
+            </h4>
+            <ul class="footer__list">
+              <li>
+                <NuxtLink to="/wie-zijn-wij">Wie zijn wij</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/faq">Veelgestelde vragen</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/wie-zijn-wij">Contact</NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/wie-zijn-wij">Disclaimer</NuxtLink>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__title">
+              Partner shops
+            </h4>
             <ul class="footer__list">
               <li>
                 <a href="#">title</a>
@@ -65,25 +83,30 @@ main {
   grid-template-rows: 1fr auto;
 }
 
+@media screen and (max-width: 1000px) {
+  .footer__col {
+    width: 100%;
+  }
+}
+
 .footer {
-  padding: 30px 0 40px;
+  padding: 20px 0;
   background: var(--color-dark);
 
   &__title {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: var(--color-light);
   }
 
   &__list {
-    font-size: 17px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
 
     li {
       position: relative;
       padding-left: 20px;
-      line-height: 24px;
       margin-bottom: 14px;
 
       &:after {
@@ -100,6 +123,10 @@ main {
 
       a {
         color: var(--color-light);
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

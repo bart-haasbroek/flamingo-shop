@@ -119,14 +119,4 @@ export default {
     margin-bottom: 60px;
   }
 }
-
-.button {
-  display: inline-block;
-  background: var(--color-primary);
-  color: #fff;
-  padding: 10px 14px 11px;
-  border-radius: 4px;
-  font-size: 14px;
-  cursor: pointer;
-}
 </style>
