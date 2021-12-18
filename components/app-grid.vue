@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="app-grid__wrapper">
-      <div class="app-grid" :class="'columns-amount-' + columns">
+      <div
+        class="app-grid"
+        :class="'columns-amount-' + columns"
+        :style="{ 'grid-gap': spacing + 'px' }"
+      >
         <slot></slot>
       </div>
     </div>
@@ -13,6 +17,9 @@ export default {
   props: {
     columns: {
       default: 2,
+    },
+    spacing: {
+      default: 30,
     },
   },
 };

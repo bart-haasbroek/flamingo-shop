@@ -5,7 +5,23 @@
       <div class="content-wrapper content-wrapper--narrow page-content">
         <div class="product">
           <div class="product__image">
-            <img :src="`/images/${product.img}`" alt="" />
+            <div class="product__active-image">
+              <img :src="`/images/${product.img}`" alt="" />
+            </div>
+            <div class="product__thumbs-wrapper">
+              <app-grid columns="3" spacing="15">
+                <div
+                  class="product__thumb-image"
+                  v-for="(thumb, index) of product.images"
+                  :key="index"
+                  @click="setImage()"
+                >
+                  <div class="product__thumb-image-holder">
+                    <img :src="`/images/${thumb}`" alt="" />
+                  </div>
+                </div>
+              </app-grid>
+            </div>
           </div>
           <div class="product__content">
             <h1 class="product__title">{{ product.title }}</h1>
@@ -24,16 +40,14 @@
             >
               Naar Bol.com
             </a>
+
+            <h4>Specificaties</h4>
           </div>
         </div>
       </div>
     </div>
     <div class="content-wrapper product__related">
-      <div class="stroke-text">
-        <h4>
-          Andere leuke flamingo producten:
-        </h4>
-      </div>
+      <title-stroke title="Andere leuke flamingo producten:"></title-stroke>
       <app-grid columns="4">
         <product-item
           v-for="product of related"
@@ -54,7 +68,6 @@ export default {
   },
   async asyncData({ $content, params }) {
     const product = await $content("products", params.slug).fetch();
-    console.log("product", product);
     const related = await $content("products")
       .limit(4)
       .only(["title", "description", "img", "slug", "price", "intro"])
@@ -65,6 +78,11 @@ export default {
       related,
     };
   },
+  methods: {
+    setImage() {
+      console.log("jeeeej", this.product);
+    },
+  },
 };
 </script>
 
@@ -73,14 +91,9 @@ export default {
   background: #f1e3e1;
 }
 
-.stroke-text {
-  font-size: 25px;
-  padding: 40px 0;
-  text-align: center;
-}
-
 .product {
   display: flex;
+  align-items: flex-start;
 
   &__title {
     margin-bottom: 8px;
@@ -90,12 +103,47 @@ export default {
     width: 40%;
     flex-shrink: 0;
     margin-right: 30px;
+  }
+
+  &__active-image {
     border-radius: 12px;
     background: white;
     padding: 20px;
 
     img {
       max-height: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  &__thumbs-wrapper {
+    margin-top: 20px;
+  }
+
+  &__thumb-image {
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__thumb-image-holder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 3px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+    background: white;
+    border-radius: 10px;
+
+    &:hover {
+      border-color: pink;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
       margin: 0 auto;
     }
   }

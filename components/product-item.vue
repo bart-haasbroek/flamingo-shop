@@ -40,11 +40,6 @@ export default {
 
   &__title {
     font-size: 14px;
-    margin-bottom: 4px;
-  }
-
-  &__summary {
-    min-height: 50px;
   }
 
   &__inner {
@@ -72,6 +67,12 @@ export default {
       object-fit: cover;
       margin: 0 auto;
       display: block;
+    }
+  }
+
+  &__price {
+    p {
+      font-size: 18px;
     }
   }
 }
