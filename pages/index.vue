@@ -3,6 +3,7 @@
     <app-header
       :isBig="true"
       :image="require(`~/assets/images/flamingo-home-bg.jpg`)"
+      :titleLeft="true"
     >
       <h1>
         Flamingo shop
@@ -10,7 +11,10 @@
       <h2>
         De leukse flamingo spullen verzameld op een plek
       </h2>
-      <NuxtLink class="button" to="/products">
+      <NuxtLink
+        class="button button--inverted font-bold header-button"
+        to="/products"
+      >
         Bekijk de producten
       </NuxtLink>
     </app-header>
@@ -84,4 +88,9 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.header-button {
+  margin-top: 20px;
+  text-shadow: none;
+}
+</style>

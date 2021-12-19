@@ -40,8 +40,6 @@
             >
               Naar Bol.com
             </a>
-
-            <h4>Specificaties</h4>
           </div>
         </div>
       </div>
@@ -80,6 +78,7 @@ export default {
   },
   methods: {
     setImage() {
+      //todo hide thumbs when there is none
       console.log("jeeeej", this.product);
     },
   },
@@ -122,6 +121,7 @@ export default {
 
   &__thumb-image {
     height: 0;
+    width: 100%;
     padding-bottom: 100%;
     position: relative;
     cursor: pointer;
@@ -165,6 +165,42 @@ export default {
 
   &__related {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .product {
+    display: block;
+    &__image {
+      width: 100%;
+      display: flex;
+    }
+
+    &__active-image {
+      width: 60%;
+      margin-right: 20px;
+    }
+
+    &__thumbs-wrapper {
+      margin-top: 0;
+      flex-grow: 1;
+    }
+
+    &__title {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .product {
+    &__image {
+      width: 100%;
+    }
+
+    &__active-image {
+      width: 75%;
+    }
   }
 }
 </style>

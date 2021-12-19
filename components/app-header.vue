@@ -6,30 +6,22 @@
           <!-- <img src="assets/images/logo.svg" alt="" /> -->
         </NuxtLink>
       </div>
-      <nav class="main-nav d-flex justify-content-end flex-grow-1">
-        <ul>
-          <li>
-            <NuxtLink :to="'/'">
-              Home
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :to="'/blog'">
-              Blog
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink :to="'/products'">
-              Shop
-            </NuxtLink>
-          </li>
-        </ul>
-      </nav>
+      <div class="d-flex justify-content-end flex-grow-1">
+        <app-nav :items="items"></app-nav>
+      </div>
     </div>
-    <div v-if="!noImg" class="header__image">
-      <img :src="image" />
-      <div class="header__title">
-        <slot></slot>
+    <div class="header__inner">
+      <div
+        v-if="!noImg"
+        class="header__title d-flex align-items-center content-wrapper"
+        :class="{ 'justify-content-center': !titleLeft }"
+      >
+        <div>
+          <slot></slot>
+        </div>
+      </div>
+      <div class="header__image">
+        <img :src="image" />
       </div>
     </div>
   </header>
@@ -46,69 +38,48 @@ export default {
       type: Boolean,
       default: false,
     },
+    titleLeft: {
+      type: Boolean,
+      default: false,
+    },
     image: {
       type: String,
       default: require(`~/assets/images/flamingo-home-bg.jpg`),
     },
   },
+  data() {
+    return {
+      items: [
+        {
+          label: "Home",
+          slug: "/",
+          key: "home",
+        },
+        {
+          label: "Blog",
+          slug: "/blog",
+          key: "blog",
+        },
+        {
+          label: "Shop",
+          slug: "/products",
+          key: "shop",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style lang="scss">
-nav.main-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-
-    li {
-      list-style-type: none;
-      margin-right: 20px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      a {
-        display: block;
-        font-size: 16px;
-        padding: 7px 18px;
-        transition: 0.4s ease;
-        text-decoration: none;
-        font-weight: bold;
-        color: var(--color-dark);
-        border-bottom: 2px solid transparent;
-
-        &.nuxt-link-exact-active {
-          border-color: var(--color-dark);
-          color: var(--color-dark);
-        }
-
-        &:hover {
-          color: white;
-        }
-      }
-    }
-  }
-}
 .header {
   position: relative;
   width: 100%;
   background: #f1786f;
 
   &__top {
-    padding: 10px;
-  }
-
-  h1,
-  h2 {
-    color: #efefef;
-  }
-
-  &.is-big {
-    .header__image {
-      height: 350px;
-    }
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   &__logo {
@@ -118,11 +89,42 @@ nav.main-nav {
     background: var(--color-dark);
   }
 
-  &__image {
+  h1,
+  h2 {
+    color: #efefef;
+  }
+
+  &.is-big {
+    .header__inner {
+      height: 350px;
+    }
+  }
+
+  &__inner {
     height: 250px;
-    background-size: cover;
-    background-position: 50%;
     position: relative;
+  }
+
+  &__title {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
 
     &:after {
       content: "";
@@ -134,27 +136,6 @@ nav.main-nav {
       height: 100%;
       opacity: 0.7;
     }
-  }
-
-  &__inner {
-    position: relative;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-
-  &__title {
-    text-align: center;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    z-index: 10;
   }
 }
 </style>
