@@ -5,7 +5,7 @@
         <NuxtLink
           :to="{ name: 'products-slug', params: { slug: product.slug } }"
         >
-          <img :src="`/images/${product.img}`" alt="" />
+          <img :src="product.img" alt="" />
         </NuxtLink>
       </div>
       <div class="product-item__title">
@@ -41,7 +41,6 @@ export default {
   &__title {
     font-size: 14px;
   }
-
   &__inner {
     padding: 20px 20px 16px;
   }
@@ -55,7 +54,8 @@ export default {
 
     a {
       position: relative;
-      display: block;
+      display: flex;
+      align-items: center;
       height: 100%;
       background: white;
       padding: 20px;
@@ -63,8 +63,7 @@ export default {
 
     img {
       max-width: 100%;
-      height: 100%;
-      object-fit: cover;
+      max-height: 100%;
       margin: 0 auto;
       display: block;
     }

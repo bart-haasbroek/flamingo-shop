@@ -6,18 +6,24 @@
         <div class="product">
           <div class="product__image">
             <div class="product__active-image">
-              <img :src="`/images/${product.img}`" alt="" />
+              <!-- <nuxt-img
+                src="https://nuxtjs.org/img/home/discover/partners/partners-illustration.svg"
+              /> -->
+              <nuxt-img :src="activeProduct" />
             </div>
-            <div class="product__thumbs-wrapper">
+            <div
+              class="product__thumbs-wrapper"
+              v-if="product.images.length > 0"
+            >
               <app-grid columns="3" spacing="15">
                 <div
                   class="product__thumb-image"
                   v-for="(thumb, index) of product.images"
                   :key="index"
-                  @click="setImage()"
+                  @click="setImage(thumb)"
                 >
                   <div class="product__thumb-image-holder">
-                    <img :src="`/images/${thumb}`" alt="" />
+                    <img :src="thumb" alt="" />
                   </div>
                 </div>
               </app-grid>
@@ -25,11 +31,10 @@
           </div>
           <div class="product__content">
             <h1 class="product__title">{{ product.title }}</h1>
-            <div class="product__description">
-              <p>
-                {{ product.description }}
-              </p>
-            </div>
+            <div
+              class="product__description"
+              v-html="product.description"
+            ></div>
             <div class="product__price">
               <p>&#8364;{{ product.price }}</p>
             </div>
@@ -62,7 +67,13 @@ export default {
   data() {
     return {
       products: "",
+      activeProduct: "",
     };
+  },
+  created() {
+    this.activeProduct =
+      "https://nuxtjs.org/img/home/discover/partners/partners-illustration.svg";
+    this.activeProduct = this.product.img;
   },
   async asyncData({ $content, params }) {
     const product = await $content("products", params.slug).fetch();
@@ -77,9 +88,8 @@ export default {
     };
   },
   methods: {
-    setImage() {
-      //todo hide thumbs when there is none
-      console.log("jeeeej", this.product);
+    setImage(url) {
+      this.activeProduct = url;
     },
   },
 };

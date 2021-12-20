@@ -20,6 +20,10 @@ export default {
     '@/assets/scss/index.scss'
   ],
 
+  modules: [
+    '@nuxt/image',
+  ],
+
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['~plugins/filters.js'],
 
@@ -28,6 +32,7 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
+    //'@nuxt/image',
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/eslint-module'
   ],
@@ -49,6 +54,20 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  image: {
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
+    domains: ['https://bol.com', 'https://media.s-bol.com', 'https:\u002F\u002Fmedia.s-bol.com', 'https://nuxtjs.org']
   },
 
   'google-gtag': {

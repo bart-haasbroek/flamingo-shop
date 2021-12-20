@@ -1,75 +1,229 @@
 [
   {
-    "title": "Eerste product123",
-    "slug": "eerste-product123",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi congue, imperdiet lorem a, pellentesque quam. Sed non hendrerit lorem. Phasellus blandit odio posuere maximus lacinia. Donec ut iaculis dolor. Suspendisse pellentesque aliquam nunc, nec lacinia felis consectetur vitae. Aliquam suscipit, odio vel ultrices ornare, sem mauris euismod lectus, et elementum felis leo eu enim. Praesent lacinia mollis leo, vitae gravida dolor. In hac habitasse platea dictumst. Fusce vel vulputate urna. Fusce fringilla luctus turpis eu gravida.",
-    "img": "flamingo-canvas.jpeg",
-    "images": ["flamingo-canvas.jpeg", "fla_mock.png", "spoon.jpeg"],
-    "intro": "introooooLearning how to use @nuxt/content to create a blog",
-    "link": "http://www.bol.com",
-    "price": "24,50"
+    "title": "Theelepels Dessertlepels Koffielepels - Flamingo - 1 STUK - RVS - Zilverkleurig - Lepeltjes - Amuselepels - Lepels",
+    "subTitle": "",
+    "slug": "theelepels-dessertlepels-koffielepels-flamingo-1-stuk-rvs-zilverkleurig-lepeltjes-amuselepels-lepels",
+    "description": "\n    <strong>Leuke Thee/Dessertlepels<br><br></strong><strong>LET OP deze worden per 1 verkocht</strong><br><br>Deze theelepels zijn gemaakt van roestvrijstaal. En staan erg leuk in uw kop Thee.<br>Ook goed te gebruiken voor uw dessert, of voor de koffie ;)<br><br>-zilverkleurig<br>-roze flamingo\n  ",
+    "img": "https://media.s-bol.com/JYPJ9kOgGEDo/247x840.jpg",
+    "images": [],
+    "link": "https://www.bol.com/nl/nl/p/theelepels-dessertlepels-koffielepels-flamingo-1-stuk-rvs-zilverkleurig-lepeltjes-amuselepels-lepels/9300000038676577/?bltgh=m6Kpqnd-AhQfhCwlrFlKmg.2_36.38.ProductImage",
+    "price": "1,99"
   },
   {
-    "title": "Flamingo mock",
-    "slug": "flamingo-mock",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi congue, imperdiet lorem a, pellentesque quam. Sed non hendrerit lorem. Phasellus blandit odio posuere maximus lacinia. Donec ut iaculis dolor. Suspendisse pellentesque aliquam nunc, nec lacinia felis consectetur vitae. Aliquam suscipit, odio vel ultrices ornare, sem mauris euismod lectus, et elementum felis leo eu enim. Praesent lacinia mollis leo, vitae gravida dolor. In hac habitasse platea dictumst. Fusce vel vulputate urna. Fusce fringilla luctus turpis eu gravida.",
-    "img": "fla_mock.png",
-    "intro": "introooooLearning how to use @nuxt/content to create a blog",
-    "link": "http://www.bol.com",
-    "price": "24,50"
+    "title": "Gotta Go Flamingo - Interactieve Knuffel",
+    "subTitle": "",
+    "slug": "gotta-go-flamingo-interactieve-knuffel",
+    "description": "\n    GottaGo Flamingo is een zachte pluchen Flamingo die je kunt voeren met zijn speciale Flamingo voer. Hij zal grappige smakgeluidjes maken en dansen op de muziek door met zijn nek te draaien. En zodra hij gaat zingen: Oh, oh, Gotta Go!, is dat het teken om hem snel op zijn WC te zetten, zodat hij zijn magische drolletjes kan leggen! De drolletjes verander je binnen een handomdraai weer in voer, zodat je hem keer op keer kunt voeren. Hij beweegt zijn lange nek ritmisch heen en weer en maakt allerlei geluidjes. Ook heeft hij een opname functie, zodat je teksten kunt inspreken, die hij voor je zal herhalen. Als je Gotta Go Flamingo een tijdje met rust laat, zal hij laten merken dat hij moe is en zal hij gaan slapen. Inclusief Flamingo voer, WC en voederlepel. Batterij informatie: 3 x AA batterijen (meegeleverd). Afmeting Flamingo: 13x10x33cm (lxbxh). Afmeting verpakking: 21x14x25cm (lxdxh). Leeftijdsindicatie: 4 jaar+.<br><br>\n<ul>\n<li>Interactieve pluchen Flamingo</li>\n<li>Voer de Flamingo met zijn speciale voer</li>\n<li>Als hij gaat zingen: Oh, oh, Gotta go! (Oh, oh, ik moet!), dan zet je hem snel op zijn wc</li>\n<li>Zijn nek gat draaien als hij gaat zingen</li>\n<li>Zie hoe de Flamingo magische drolletjes legt in de wc!</li>\n<li>Verander de drolletjes weer in voer en begin opnieuw</li>\n<li>De opname functie maakt het mogelijk allerlei teksten in te spreken die hij zal herhalen</li>\n</ul>\n  ",
+    "img": "https://media.s-bol.com/O55W7Z4yJM1E/D9JKN2Y/550x659.jpg",
+    "images": [
+      "https://media.s-bol.com/O55W7Z4yJM1E/D9JKN2Y/124x148.jpg",
+      "https://media.s-bol.com/zxAYOGJAmxQy/G5XLA53/124x69.jpg",
+      "https://media.s-bol.com/R55ZgL9o8gQO/D9JKN2Y/120x155.jpg",
+      "https://media.s-bol.com/P5501Y4Z6726/D9JKN2Y/124x117.jpg",
+      "https://media.s-bol.com/N55Vx8497LZ8/D9JKN2Y/114x155.jpg",
+      "https://media.s-bol.com/V004mN6PJmXv/D9JKN2Y/124x124.jpg",
+      "https://media.s-bol.com/N7gNpAjV2BBm/2R5ZK7A/124x124.jpg",
+      "https://media.s-bol.com/K6PqqYpoZ16M/124x121.jpg",
+      "https://media.s-bol.com/JY9wBPAVyK7g/pgBjm8y/124x81.jpg",
+      "https://media.s-bol.com/Y5QlKZ56XNDn/124x111.jpg",
+      "https://media.s-bol.com/qZVM0jPyrMAk/95x155.jpg",
+      "https://media.s-bol.com/R8mRwGnpBkgz/Bg5Z4Zk/124x89.jpg",
+      "https://media.s-bol.com/QAlQvEmoLj1M/Bg5Z4Zk/116x155.jpg",
+      "https://media.s-bol.com/zqDR9j5ENoA7/O7rx4LN/124x124.jpg",
+      "https://media.s-bol.com/xlYMMV30vnl3/124x149.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/gotta-go-flamingo-interactieve-knuffel/9300000020075963/?bltgh=m6Kpqnd-AhQfhCwlrFlKmg.2_36.37.ProductImage",
+    "price": "29,95"
   },
   {
-    "title": "Flamingo lepel",
-    "slug": "flamingo-lepel",
-    "description": "Deze theelepels zijn gemaakt van roestvrijstaal. En staan erg leuk in uw kop Thee. Ook goed te gebruiken voor uw dessert, of voor de koffie ;)",
-    "img": "spoon.jpeg",
-    "intro": "introooooLearning how to use @nuxt/content to create a blog",
-    "link": "https://www.bol.com/nl/nl/p/theelepels-dessertlepels-koffielepels-flamingo-1-stuk-rvs-zilverkleurig-lepeltjes-amuselepels-lepels/9300000038676577/?bltgh=h6Y6-fmq-UPOJqSngb1MgQ.2_36.38.ProductImage",
-    "price": "24,50"
+    "title": "Schilderen Op Nummer Volwassenen - Do It Yourself Paintings - Exotic Flamingo - Flamingo - Dieren - Kleurrijk - Landschap - 40x50 cm - Canvas",
+    "subTitle": "",
+    "slug": "schilderen-op-nummer-volwassenen-do-it-yourself-paintings-exotic-flamingo-flamingo-dieren-kleurrijk-landschap-40x50-cm-canvas",
+    "description": "\n    <p> <strong>Haal de kunstenaar in jezelf naar boven of verras je moeder, vader, vriend of vriendin met een origineel cadeau! Met schilderen op nummer van Do It Yourself Paintings stimuleer je je creatieve brein en kun je tegelijkertijd heerlijk ontspannen. Schilderen op nummer is voor iedereen een leuke manier om een eigengemaakt kunstwerk te creëren. Ga je voor rust en ontspanning, of voor gezelligheid met zijn allen? Het kan allemaal met de schilderijen van Do It Yourself Paintings, en geniet van urenlang verfplezier!</strong> </p>\n<p> Schilderen op nummer is dé razend populaire hobby die je ultieme ontspanning en plezier levert. Op het canvas staan genummerde vakjes die samen een schilderij vormen. Met de meegeleverde acrylverf en verschillende kwastjes maak je nu zelf een prachtig kunstwerk. </p>\n<p> Het eindresultaat kun je een mooie plek aan de muur geven of opslaan in je portfolio, zodat je altijd kunt genieten van je eigengemaakte kunstwerk!<br><br><strong>Compleet Schilderen op Nummer Pakket:<br></strong>• Genummerde canvas <br>• Set benodigde acrylverf<br>• Kwastjes<br>• 20% extra verf<br>• Voorbeeld in kleur<br>• Ophang haakjes </p>\n<p> <strong>Hoe ga je te werk?<br></strong>Op het canvas staan genummerde vakjes die samen een kunstwerk vormen wanneer ze worden ingekleurd met de meegeleverde verf. Elk nummer komt overeen met een kleur van de verfpotjes. Schilder de vakjes één voor één met de juiste kleur en geniet van je zelfgemaakte kunstwerk! <br><br><strong>Plezier met zijn allen!<br></strong>Schilderen op nummer is voor jong en oud, en kun je alleen doen, maar ook samen! Schilderen op nummer van Do It Yourself Paintings is voor zowel volwassenen, jongeren en kinderen heel leuk om te doen. Je kunt er samen met vrienden, kinderen, moeder of zus een gezellige bezigheid van maken en zo samen werken aan prachtige kunstwerken!<br><br><strong>Voordelen:<br></strong>✔ Complete set met acrylverf en kwastjes<br>✔ Uren verfplezier <br>✔ Duidelijk leesbare letters op helderwit canvas<br>✔ Geschikt voor alle leeftijden<br>✔ Iedereen kan op deze manier de mooiste schilderijen maken<br>✔ Origineel cadeau om te geven of om te krijgen!<br>✔ Ontspannende bezigheid </p>\n<p> <strong>Zonder frame en vouwen<br></strong>Het canvas van Do It Yourself Paintings wordt geleverd zonder frame. Het grote voordeel hieraan is dat het zonder frame makkelijker schildert. Daarnaast kan het hierdoor ook eenvoudiger verzonden worden, wat het ook nog eens voordeliger maakt. Na ontvangst strijk je het schilderij om het canvas klaar voor gebruik te maken. Er worden ophanghaakjes bijgeleverd om het kunstwerk een mooie plek aan de muur te geven! </p>\n<p> Do It Yourself Paintings - Be The Next Artist! </p>\n  ",
+    "img": "https://media.s-bol.com/RM6029qA24Yz/550x690.jpg",
+    "images": [
+      "https://media.s-bol.com/RM6029qA24Yz/123x155.jpg",
+      "https://media.s-bol.com/7n3k11kl5l31/109x155.jpg",
+      "https://media.s-bol.com/JEjQ9nO5mjoK/r016onB/124x125.jpg",
+      "https://media.s-bol.com/YQERW0XywDWp/124x124.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/schilderen-op-nummer-volwassenen-do-it-yourself-paintings-exotic-flamingo-flamingo-dieren-kleurrijk-landschap-40x50-cm-canvas/9300000037123268/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.42.ProductImage",
+    "price": "11,50"
   },
   {
-    "title": "Flamingo strandlaken",
-    "slug": "flamingo-strandlaken",
-    "description": "Good Morning strandlaken Flamingo Dit grote, vrolijke strandlaken biedt voor jou de uitkomst om lekker te liggen op het strand, of makkelijk af te drogen na het zwemmen.",
-    "img": "handdoek.jpeg",
-    "intro": "introooooLearning how to use @nuxt/content to create a blog",
-    "link": "https://www.bol.com/nl/nl/p/strandlaken-flamingo/9200000132711854/?bltgh=h6Y6-fmq-UPOJqSngb1MgQ.2_36.40.ProductImage",
-    "price": "24,50"
+    "title": "Schilderen Op Nummer - Flamingo",
+    "subTitle": "Gekleurde buitenlijnen: Meer schilderplezier & mooier resultaat!",
+    "slug": "schilderen-op-nummer-flamingo",
+    "description": "\n    Schilderen op nummer van Ravensburger - iedereen kan schilderen! Dankzij de gekleurde buitenlijnen kunnen kinderen de afbeelding van Flamingo en de benodigde kleuren sneller herkennen. Zo is het kinderlijk eenvoudig de kunstenaar in jezelf wakker te maken! Met grote schilderoppervlakken en veel verschillende kleuren zijn de schilderplaten van de schilderen op nummer Classic-serie van Ravensburger zeer geschikt voor de jonge kunstenaar. Uitpakken en aan de slag! Onze acrylverf:â¢ droogt snel â¢ is op waterbasisâ¢ ruikt niet onaangenaamâ¢ maakt penseelreiniger overbodig\n  ",
+    "img": "https://media.s-bol.com/xG44Ng53ANqz/550x803.jpg",
+    "images": [
+      "https://media.s-bol.com/xG44Ng53ANqz/106x155.jpg",
+      "https://media.s-bol.com/BN97JB3ZRmjn/k5yQlGN/112x155.jpg",
+      "https://media.s-bol.com/OJYpqllq7W2r/wj68gzX/124x124.jpg",
+      "https://media.s-bol.com/qVVxpo4pBGG3/105x155.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/schilderen-op-nummer-flamingo/9200000127692351/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.44.ProductImage",
+    "price": "12,61"
   },
   {
-    "title": "Eerste product",
-    "slug": "eerste-product",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi congue, imperdiet lorem a, pellentesque quam. Sed non hendrerit lorem. Phasellus blandit odio posuere maximus lacinia. Donec ut iaculis dolor. Suspendisse pellentesque aliquam nunc, nec lacinia felis consectetur vitae. Aliquam suscipit, odio vel ultrices ornare, sem mauris euismod lectus, et elementum felis leo eu enim. Praesent lacinia mollis leo, vitae gravida dolor. In hac habitasse platea dictumst. Fusce vel vulputate urna. Fusce fringilla luctus turpis eu gravida.",
-    "img": "flamingo-canvas.jpeg",
-    "intro": "introooooLearning how to use @nuxt/content to create a blog",
-    "link": "http://www.bol.com",
-    "price": "24,50"
+    "title": "VTech Blub Blub Bad Waterpret Flamingo - Interactief Babyspeelgoed",
+    "subTitle": "",
+    "slug": "vtech-blub-blub-bad-waterpret-flamingo-interactief-babyspeelgoed",
+    "description": "\n    <p> Druk op de knipperende toets om grappige geluiden, vrolijke zinnetjes, gezongen liedjes en melodietjes te horen. Het gieten van water met het mandje prikkelt de fantasie en stimuleert de ontwikkeling van de motorische vaardigheden. Kom mee op een spetterend avontuur! </p>\n<h3>Producteigenschappen:</h3>\n<ul>\n<li>Inclusief mandje om water te gieten en zo de ontwikkeling van de motoriek te stimuleren</li>\n<li>15 melodietjes en 3 gezongen liedjes</li>\n<li>Verzamel ze allemaal!</li>\n<li>Waterbestendig, stevig en duurzaam design</li>\n<li>Automatische uitschakeling</li>\n</ul>\n  ",
+    "img": "https://media.s-bol.com/36GPmKrL66BO/550x328.jpg",
+    "images": [
+      "https://media.s-bol.com/36GPmKrL66BO/124x74.jpg",
+      "https://media.s-bol.com/YQ11n1jkJKJM/X62LnZA/124x105.jpg",
+      "https://media.s-bol.com/5R8nwzvDQl7Z/124x132.jpg",
+      "https://media.s-bol.com/WQnOK9EGLwPX/124x82.jpg",
+      "https://media.s-bol.com/4z8mvyrBQk60/124x82.jpg",
+      "https://media.s-bol.com/V7mp2Vy2G2D5/124x82.jpg",
+      "https://media.s-bol.com/WQkYK9BYgvkQ/124x114.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/vtech-blub-blub-bad-waterpret-flamingo-interactief-babyspeelgoed/9200000128115202/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.48.ProductImage",
+    "price": "18,90"
   },
   {
-    "title": "Flamingo mock234",
-    "slug": "flamingo-mock234",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi congue, imperdiet lorem a, pellentesque quam. Sed non hendrerit lorem. Phasellus blandit odio posuere maximus lacinia. Donec ut iaculis dolor. Suspendisse pellentesque aliquam nunc, nec lacinia felis consectetur vitae. Aliquam suscipit, odio vel ultrices ornare, sem mauris euismod lectus, et elementum felis leo eu enim. Praesent lacinia mollis leo, vitae gravida dolor. In hac habitasse platea dictumst. Fusce vel vulputate urna. Fusce fringilla luctus turpis eu gravida.",
-    "img": "fla_mock.png",
-    "intro": "introooooLearning how to use @nuxt/content to create a blog",
-    "link": "http://www.bol.com",
-    "price": "24,50"
+    "title": "Mepal – Lunchset campus (pu + lb) – pop-up drinkfles en broodtrommel voor kinderen – Tropical Flamingo – bento box – lekvrij",
+    "subTitle": "",
+    "slug": "mepal-lunchset-campus-pu-lb-pop-up-drinkfles-en-broodtrommel-voor-kinderen-tropical-flamingo-bento-box-lekvrij",
+    "description": "\n    <p> Helemaal klaar voor een nieuwe schooldag met de lunchset met tropical flamingo print van Mepal. Deze handige set bestaat uit een pop-up drinkfles en een lunchbox midi, voorzien van bento box en vorkje. De drinkfles voor kinderen is ideaal; druk en drink, dat is het principe. De fles is gegarandeerd lekvrij en ook makkelijk door kleine kinderhandjes te gebruiken. De bento lunchbox biedt ruimte aan maximaal 4 boterhammen en wordt inclusief bentoboxje en fruitvorkje geleverd. Zo wordt variatie rond de lunch écht kinderspel! Verras jouw zoon of dochter bijvoorbeeld eens met wat snoeptomaatjes tijdens de lunch of geef ze eens een stukje kaas of worst mee. De mogelijkheden worden bijna eindeloos! Dat wordt iedere dag een beetje extra genieten. Extra fijn voor papa en mama: zowel de pop-up drinkfles als de broodtrommel voor kinderen mogen gewoon in de vaatwasser. </p>\n<ul>\n<li>Set van lunchbox en pop-up drinkfles</li>\n<li>Eenvoudig schoon te maken</li>\n<li>Drinkfles is lekvrij</li>\n<li>Lunchbox is inclusief bentoboxje</li>\n</ul>\n  ",
+    "img": "https://media.s-bol.com/k8yoNmqROWwJ/550x392.jpg",
+    "images": [
+      "https://media.s-bol.com/k8yoNmqROWwJ/124x88.jpg",
+      "https://media.s-bol.com/NElM93lgAPw8/pglKQmQ/124x88.jpg",
+      "https://media.s-bol.com/YW2MmJ8ywPqM/124x130.jpg",
+      "https://media.s-bol.com/DJmVl6jg5725/nr1Z8Pp/124x93.jpg",
+      "https://media.s-bol.com/m21DQLGy9VL9/pglKQmQ/124x94.jpg",
+      "https://media.s-bol.com/K5wVvzqpnGEx/kZ15DrE/124x114.jpg",
+      "https://media.s-bol.com/3jzZQyZ8NLOR/pglKQmQ/124x97.jpg",
+      "https://media.s-bol.com/o6wgk8zJNwyX/nr1Z8Pp/124x93.jpg",
+      "https://media.s-bol.com/DYXy9MwMMJ76/pglKQmQ/124x94.jpg",
+      "https://media.s-bol.com/B8VwLK1KKR7Q/pglKQmQ/124x88.jpg",
+      "https://media.s-bol.com/xVpRnv0RkqJz/pglKQmQ/124x89.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/mepal-lunchset-campus-pop-up-drinkfles-en-broodtrommel-voor-kinderen-tropical-flamingo-bento-box-lekvrij/9200000094145373/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.49.ProductImage",
+    "price": "20,28"
   },
   {
-    "title": "Flamingo lepel234",
-    "slug": "flamingo-lepel234",
-    "description": "Deze theelepels zijn gemaakt van roestvrijstaal. En staan erg leuk in uw kop Thee. Ook goed te gebruiken voor uw dessert, of voor de koffie ;)",
-    "img": "spoon.jpeg",
-    "intro": "introooooLearning how to use @nuxt/content to create a blog",
-    "link": "https://www.bol.com/nl/nl/p/theelepels-dessertlepels-koffielepels-flamingo-1-stuk-rvs-zilverkleurig-lepeltjes-amuselepels-lepels/9300000038676577/?bltgh=h6Y6-fmq-UPOJqSngb1MgQ.2_36.38.ProductImage",
-    "price": "24,50"
+    "title": "Flamingo Kinderhorloge Roze | Kunststof/Plastic | Fashion Favorite - Quartz - Unisex - Plexiglas - Siliconen - Geen opties - Rond - Polshorloge - Gesp - Geen personage",
+    "subTitle": "",
+    "slug": "flamingo-kinderhorloge-roze-kunststof-plastic-fashion-favorite-quartz-unisex-plexiglas-siliconen-geen-opties-rond-polshorloge-gesp-geen-personage",
+    "description": "\n    <p> De naam van het kinderhorloge zegt het al, een horloge voor meiden of jongens in een hippe kleur met flamingo's. Het klokje is kleiner, de band is van soepel kunststof en is 23 cm lang. Je kunt gaatjes bijmaken/bijponsen mocht deze niet om de pols passen. </p>\n<p> - Kunststof band<br>- Quartz uurwerk<br>- Spatwaterdicht<br>- Bandlengte: 23 cm<br>- Bandbreedte: 1,5 cm<br>- Diameter kast: 32 mm </p>\n<p> kinderhorloge, polshorloge </p>\n  ",
+    "img": "https://media.s-bol.com/YEv88VxPEDy2/395x840.jpg",
+    "images": [
+      "https://media.s-bol.com/YEv88VxPEDy2/72x155.jpg",
+      "https://media.s-bol.com/xQ8g1LL7Drz/124x106.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/flamingo-kinderhorloge-roze-kunststof-plastic-o-33-mm-fashion-favorite/9200000112665240/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.51.ProductImage",
+    "price": "6,95"
   },
   {
-    "title": "Flamingo strandlaken234",
-    "slug": "flamingo-strandlaken234",
-    "description": "Good Morning strandlaken Flamingo Dit grote, vrolijke strandlaken biedt voor jou de uitkomst om lekker te liggen op het strand, of makkelijk af te drogen na het zwemmen.",
-    "img": "handdoek.jpeg",
-    "intro": "introooooLearning how to use @nuxt/content to create a blog",
-    "link": "https://www.bol.com/nl/nl/p/strandlaken-flamingo/9200000132711854/?bltgh=h6Y6-fmq-UPOJqSngb1MgQ.2_36.40.ProductImage",
-    "price": "24,50"
+    "title": "TY Fashion Pantoffels Flamingo Gilda Maat 36-38",
+    "subTitle": "",
+    "slug": "ty-fashion-pantoffels-flamingo-gilda-maat-36-38",
+    "description": "\n    TY Fashion pantoffels flamingo Gilda in maat 36/38.Ik hou van grappen vertellen en dom doen.Ik ben grappiger dan mijn broer Billy!\n  ",
+    "img": "https://media.s-bol.com/5LJAYLYVJZXv/mQw7RZR/550x432.jpg",
+    "images": [],
+    "link": "https://www.bol.com/nl/nl/p/ty-fashion-pantoffels-flamingo-gilda-maat-36-38/9300000001939395/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.54.ProductImage",
+    "price": "29,20"
+  },
+  {
+    "title": "Adori Skinny Flamingo - Hondenspeelgoed - Met Piep - 51 cm - Assorti",
+    "subTitle": "",
+    "slug": "adori-skinny-flamingo-hondenspeelgoed-met-piep-51-cm-assorti",
+    "description": "\n    Bevorder het jachtinstinct met de Skinny Flamingo<br><p>  Veel honden houden van pluche speelgoed, het nadeel daarvan is dat er vaak een vulling inzit die ze eruit kunnen trekken. De Skinny Flamingo van Adori is een schattig knuffelspeeltje zónder vulling, dat scheelt een hoop rotzooi in huis. Het is dan ook niet erg wanneer je hond een gaatje maakt in dit speeltje. Wel zitten er twee leuke piepers in de flamingo die het speeltje extra uitdagend maken. Dit zorgt voor urenlang speelplezier.  </p><br>Speel samen met je hond<br><p>  Door de pieper in het speeltje zal je hond extra worden geprikkeld tot spelen met of zonder baas. Om de band met je hond te versterken is het belangrijk dat je regelmatig met je hond speelt. Je hond zal daardoor zijn teveel aan energie kwijt raken en de relatie baas hond wordt versterkt. De flamingo kan bijvoorbeeld bij de kop of poten worden vastgepakt en biedt zo veel speelmogelijkheden.  </p><br><p>  <strong>De Skinny Flamingo Met Piep is 51 cm groot en is roze van kleur.</strong>  </p>\n  ",
+    "img": "https://media.s-bol.com/mZZZ1EORRGx9/392x840.jpg",
+    "images": [
+      "https://media.s-bol.com/mZZZ1EORRGx9/72x155.jpg",
+      "https://media.s-bol.com/mBzX2lrvBPn/77x155.jpg",
+      "https://media.s-bol.com/37qJYwAZRxA/77x155.jpg",
+      "https://media.s-bol.com/RW7ROLkML7E/58x155.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/adori-skinny-flamingo-hondenspeelgoed-met-piep-51-cm-assorti/9200000089227948/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.55.ProductImage",
+    "price": "10,35"
+  },
+  {
+    "title": "Mondkapje wasbaar van katoen - 2 laags met elastiek - flamingo - Turquoise",
+    "subTitle": "",
+    "slug": "mondkapje-wasbaar-van-katoen-2-laags-met-elastiek-flamingo-turquoise",
+    "description": "\n    <p> Dit 2 laags Turquoise mondkapje met flamingo is gemaakt van katoen materiaal, ideaal voor basisbescherming voor consumenten en in het openbaar vervoer. Door dit mondkapje te dragen zorgt u ervoor dat u een basisbescherming gebruikt zoals de richtlijnen van de overheid voorschrijven. Het mondkapje beschikt over een elastische band om achter de oren te bevestigen. Daarnaast zit er een vouw in het mondkapje zodat deze zich goed aanpast aan de vorm van ieder gezicht. </p><p> Dit mondkapje is met een dubbele laag voor extra veiligheid. Het mondkapje is te wassen op 60 graden celsius en is vrij van metaal, waardoor er meer veiligheid is tijdens het wassen. </p><h3>Specificaties k<strong>atoen m</strong><strong>ondkapje</strong></h3><ul><li>Wasbaar op 60 °C</li><li>Met elastische band</li><li>Gemaakt van katoen</li><li>Ideaal voor consumentengebruik of in het OV</li></ul>\n  ",
+    "img": "https://media.s-bol.com/83N5gXX64NJg/550x268.jpg",
+    "images": [
+      "https://media.s-bol.com/83N5gXX64NJg/124x60.jpg",
+      "https://media.s-bol.com/7905MDD6KYWy/124x90.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/mondkapje-wasbaar-van-katoen-2-laags-met-elastiek-flamingo-turquoise/9300000007951919/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.57.ProductImage",
+    "price": "8,95"
+  },
+  {
+    "title": "Grote roze pluche flamingo knuffel 65 cm",
+    "subTitle": "",
+    "slug": "grote-roze-pluche-flamingo-knuffel-65-cm",
+    "description": "\n    Grote roze flamingo knuffel 65 cm. Deze grote flamingo is heerlijk zacht.  Hoogte circa: 65 cm.\n  ",
+    "img": "https://media.s-bol.com/gJJ06OA22g63/329x840.jpg",
+    "images": [],
+    "link": "https://www.bol.com/nl/nl/p/grote-roze-pluche-flamingo-knuffel-65-cm/9200000100319469/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.60.ProductImage",
+    "price": "19,94"
+  },
+  {
+    "title": "Kong Shakers Honkers Flamingo Roze - - Small",
+    "subTitle": "",
+    "slug": "kong-shakers-honkers-flamingo-roze-small",
+    "description": "\n    Schudden en spelen met de Honkers Flamingo<br>Dat honden van speelgoed houden. is geen geheim. Maar soms kan het lastig zijn om een speeltje te vinden dat genoeg prikkels biedt voor jouw hond. De Honkers Flamingo van de Shakers lijn van Kong biedt jouw hond deze uitdaging.<br><br>De Shakers Honkers Flamingo heeft een formaat van 33 cm.<br><br>Wat vinden honden leuk aan de Honkers Flamingo?<br>De Honkers Flamingo is qua uiterlijk een zachte. pluche eend. Er kan mee worden gegooid. getrokken of geschud. De nek van de Flamingo is gemaakt van een robuuster materiaal dan de rest van het lichaam. Zo wordt het kauwinstinct van de hond gestimuleerd.<br><br>Op de nek na. is de rest van het speeltje slap. Deze slapheid en het grotere formaat zorgen ervoor dat de Flamingo prima geschikt is voor een apporteerspel. Ook bevat de Flamingo een laagtonige pieper die de speeltijd verlengt en voor langdurige betrokkenheid zorgt. Door de lage toon is deze minder vervelend voor het baasje dan sommige hoge piepers.<br><br>Een veelzijdig speeltje<br>De Honkers Flamingo is een leuk uitziend en uitdagend speelgoed. Je hond zal het fijn vinden om op te nek te kauwen. maar je kan ook samen met je hond spelen door middel van een trek- of apporteerspel. Zo werk je aan de onderlinge relatie tussen jou en je hond.<br><br>Let op: geen enkel speeltje is onverwoestbaar. Pets Place geeft dan ook geen sloopgarantie op speelgoed. Laat speelgoed nooit zonder toezicht liggen.\n  ",
+    "img": "https://media.s-bol.com/YQYJ4xPQWg2p/qj2103p/333x840.jpg",
+    "images": [
+      "https://media.s-bol.com/YQYJ4xPQWg2p/qj2103p/61x155.jpg",
+      "https://media.s-bol.com/m20m1MPgOQWO/3l9NzA4/98x155.jpg",
+      "https://media.s-bol.com/D8WGJrZ3kv5B/81x155.jpg",
+      "https://media.s-bol.com/2xNnDwKNg7mA/83x155.jpg",
+      "https://media.s-bol.com/7n3VPMoLzmvB/qj2103p/124x104.jpg",
+      "https://media.s-bol.com/9g4R8EMnADpz/81x155.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/kong-shakers-honkers-flamingo-roze-small/9200000120673366/?bltgh=t-4WN37SCorlJP2Va0BKxw.2_36.62.ProductImage",
+    "price": "13,21"
+  },
+  {
+    "title": "Neon lamp flamingo - Nachtlamp- Wandlamp- Neon verlichting",
+    "subTitle": "",
+    "slug": "neon-lamp-flamingo-nachtlamp-wandlamp-neon-verlichting",
+    "description": "\n    Design neon wandlamp. <br>Origineel, leuk en decoratief. <br>Gemaakt van hoogwaardig PVC plastic. <br>Verkrijgbaar in neon roze. <br>Transparante staaldraadkabel. <br>Figuur heeft de vorm van een flamingo. <br>Ideaal voor omgevingslicht en/of decoratief licht. <br>Perfect voor woonkamers, eetkamers en slaapkamers.\n  ",
+    "img": "https://media.s-bol.com/3jpK1jx4kqOr/1jYEv1V/550x555.jpg",
+    "images": [
+      "https://media.s-bol.com/3jpK1jx4kqOr/1jYEv1V/124x125.jpg",
+      "https://media.s-bol.com/m2nMRPn93PYA/1jYEv1V/124x124.jpg",
+      "https://media.s-bol.com/B82RomLGr72W/1jYEv1V/109x155.jpg",
+      "https://media.s-bol.com/NE25Dj3wJLr8/1jYEv1V/124x123.jpg",
+      "https://media.s-bol.com/gxGQY9mKpjwl/1jYEv1V/124x131.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/neon-lamp-flamingo-nachtlamp-wandlamp-neon-verlichting/9300000040098276/?bltgh=t-4WN37SCorlJP2Va0BKxw.kOZQAI3zCzgbwe47bvBIVg_0_34.39.ProductImage",
+    "price": "26,95"
+  },
+  {
+    "title": "Pixelhobby complete set - Flamingo's - Kunststof - Geen batterijen - Jongens en meisjes - Pixelen - Niet-elektrisch - Geen personage",
+    "subTitle": "",
+    "slug": "pixelhobby-complete-set-flamingos-kunststof-geen-batterijen-jongens-en-meisjes-pixelen-niet-elektrisch-geen-personage",
+    "description": "\n    <p> <strong>Pixelhobby Complete Set Flamingo's. </strong> </p>\n<p> Inhoud: </p>\n<ul>\n<li>4 vierkante basisplaatjes van 6 x 6 cm (24 x 24 pixels).</li>\n<li>4 zwaluwstaartjes om de basisplaatjes aan elkaar te koppelen.</li>\n<li>Een patroon voor het maken van de twee Flamingo's.</li>\n<li>20 pixelmatjes in 10 verschillende kleuren.</li>\n</ul>\n<p> Eigenschappen Pixelhobby Classic: </p>\n<ul>\n<li>Geschikt voor kinderen vanaf 6 jaar.</li>\n<li>Pixelgrootte 2 x 2 mm.</li>\n<li>Pixelhobby Classic bestaat uit 94% Biologische grondstoffen gewonnen uit suikerriet.</li>\n</ul>\n  ",
+    "img": "https://media.s-bol.com/GwrYY1jEx2z8/lO3LDAr/550x569.jpg",
+    "images": [
+      "https://media.s-bol.com/GwrYY1jEx2z8/lO3LDAr/124x128.jpg",
+      "https://media.s-bol.com/xvPo2GvgLkyn/124x125.jpg",
+      "https://media.s-bol.com/M56vG3l4DnZA/pQnJNkp/124x145.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/pixelhobby-complete-set-flamingo-s/9200000097696803/?bltgh=t-4WN37SCorlJP2Va0BKxw.kOZQAI3zCzgbwe47bvBIVg_0_34.44.ProductImage",
+    "price": "12,49"
+  },
+  {
+    "title": "Lg-imports Bal Flamingo Meisjes 23 Cm Roze",
+    "subTitle": "",
+    "slug": "lg-imports-bal-flamingo-meisjes-23-cm-roze",
+    "description": "\n    LG-Imports Flamingo bal<br><br>Deze metallic flamingo-bal valt zeker op door zijn kleur! De bal heeft een afbeelding van een flamingo en staat garant voor een hoop speelplezier. Wordt niet opgepompt geleverd.<br><br>Specificaties:<br>Geslacht: meisjes<br>Kleur: roze<br>Materiaal: kunststof<br>diameter: 16 cm <br>Leeftijd: vanaf 3 jaar\n  ",
+    "img": "https://media.s-bol.com/qPknR1pjjX0/550x549.jpg",
+    "images": [
+      "https://media.s-bol.com/qPknR1pjjX0/124x123.jpg",
+      "https://media.s-bol.com/y6mWV7poQq86/124x123.jpg"
+    ],
+    "link": "https://www.bol.com/nl/nl/p/lg-imports-bal-flamingo-meisjes-23-cm-roze/9200000102275374/?bltgh=t-4WN37SCorlJP2Va0BKxw.kOZQAI3zCzgbwe47bvBIVg_0_34.45.ProductImage",
+    "price": "4,70"
   }
 ]

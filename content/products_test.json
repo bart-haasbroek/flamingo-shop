@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Eerste product123",
+    "slug": "eerste-product123",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi congue, imperdiet lorem a, pellentesque quam. Sed non hendrerit lorem. Phasellus blandit odio posuere maximus lacinia. Donec ut iaculis dolor. Suspendisse pellentesque aliquam nunc, nec lacinia felis consectetur vitae. Aliquam suscipit, odio vel ultrices ornare, sem mauris euismod lectus, et elementum felis leo eu enim. Praesent lacinia mollis leo, vitae gravida dolor. In hac habitasse platea dictumst. Fusce vel vulputate urna. Fusce fringilla luctus turpis eu gravida.",
+    "img": "flamingo-canvas.jpeg",
+    "images": ["flamingo-canvas.jpeg", "fla_mock.png", "spoon.jpeg"],
+    "intro": "introooooLearning how to use @nuxt/content to create a blog",
+    "link": "http://www.bol.com",
+    "price": "24,50"
+  },
+  {
+    "title": "Flamingo mock",
+    "slug": "flamingo-mock",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi congue, imperdiet lorem a, pellentesque quam. Sed non hendrerit lorem. Phasellus blandit odio posuere maximus lacinia. Donec ut iaculis dolor. Suspendisse pellentesque aliquam nunc, nec lacinia felis consectetur vitae. Aliquam suscipit, odio vel ultrices ornare, sem mauris euismod lectus, et elementum felis leo eu enim. Praesent lacinia mollis leo, vitae gravida dolor. In hac habitasse platea dictumst. Fusce vel vulputate urna. Fusce fringilla luctus turpis eu gravida.",
+    "img": "fla_mock.png",
+    "intro": "introooooLearning how to use @nuxt/content to create a blog",
+    "link": "http://www.bol.com",
+    "price": "24,50"
+  },
+  {
+    "title": "Flamingo lepel",
+    "slug": "flamingo-lepel",
+    "description": "Deze theelepels zijn gemaakt van roestvrijstaal. En staan erg leuk in uw kop Thee. Ook goed te gebruiken voor uw dessert, of voor de koffie ;)",
+    "img": "spoon.jpeg",
+    "intro": "introooooLearning how to use @nuxt/content to create a blog",
+    "link": "https://www.bol.com/nl/nl/p/theelepels-dessertlepels-koffielepels-flamingo-1-stuk-rvs-zilverkleurig-lepeltjes-amuselepels-lepels/9300000038676577/?bltgh=h6Y6-fmq-UPOJqSngb1MgQ.2_36.38.ProductImage",
+    "price": "24,50"
+  },
+  {
+    "title": "Flamingo strandlaken",
+    "slug": "flamingo-strandlaken",
+    "description": "Good Morning strandlaken Flamingo Dit grote, vrolijke strandlaken biedt voor jou de uitkomst om lekker te liggen op het strand, of makkelijk af te drogen na het zwemmen.",
+    "img": "handdoek.jpeg",
+    "intro": "introooooLearning how to use @nuxt/content to create a blog",
+    "link": "https://www.bol.com/nl/nl/p/strandlaken-flamingo/9200000132711854/?bltgh=h6Y6-fmq-UPOJqSngb1MgQ.2_36.40.ProductImage",
+    "price": "24,50"
+  },
+  {
+    "title": "Eerste product",
+    "slug": "eerste-product",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi congue, imperdiet lorem a, pellentesque quam. Sed non hendrerit lorem. Phasellus blandit odio posuere maximus lacinia. Donec ut iaculis dolor. Suspendisse pellentesque aliquam nunc, nec lacinia felis consectetur vitae. Aliquam suscipit, odio vel ultrices ornare, sem mauris euismod lectus, et elementum felis leo eu enim. Praesent lacinia mollis leo, vitae gravida dolor. In hac habitasse platea dictumst. Fusce vel vulputate urna. Fusce fringilla luctus turpis eu gravida.",
+    "img": "flamingo-canvas.jpeg",
+    "intro": "introooooLearning how to use @nuxt/content to create a blog",
+    "link": "http://www.bol.com",
+    "price": "24,50"
+  },
+  {
+    "title": "Flamingo mock234",
+    "slug": "flamingo-mock234",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi congue, imperdiet lorem a, pellentesque quam. Sed non hendrerit lorem. Phasellus blandit odio posuere maximus lacinia. Donec ut iaculis dolor. Suspendisse pellentesque aliquam nunc, nec lacinia felis consectetur vitae. Aliquam suscipit, odio vel ultrices ornare, sem mauris euismod lectus, et elementum felis leo eu enim. Praesent lacinia mollis leo, vitae gravida dolor. In hac habitasse platea dictumst. Fusce vel vulputate urna. Fusce fringilla luctus turpis eu gravida.",
+    "img": "fla_mock.png",
+    "intro": "introooooLearning how to use @nuxt/content to create a blog",
+    "link": "http://www.bol.com",
+    "price": "24,50"
+  },
+  {
+    "title": "Flamingo lepel234",
+    "slug": "flamingo-lepel234",
+    "description": "Deze theelepels zijn gemaakt van roestvrijstaal. En staan erg leuk in uw kop Thee. Ook goed te gebruiken voor uw dessert, of voor de koffie ;)",
+    "img": "spoon.jpeg",
+    "intro": "introooooLearning how to use @nuxt/content to create a blog",
+    "link": "https://www.bol.com/nl/nl/p/theelepels-dessertlepels-koffielepels-flamingo-1-stuk-rvs-zilverkleurig-lepeltjes-amuselepels-lepels/9300000038676577/?bltgh=h6Y6-fmq-UPOJqSngb1MgQ.2_36.38.ProductImage",
+    "price": "24,50"
+  },
+  {
+    "title": "Flamingo strandlaken234",
+    "slug": "flamingo-strandlaken234",
+    "description": "Good Morning strandlaken Flamingo Dit grote, vrolijke strandlaken biedt voor jou de uitkomst om lekker te liggen op het strand, of makkelijk af te drogen na het zwemmen.",
+    "img": "handdoek.jpeg",
+    "intro": "introooooLearning how to use @nuxt/content to create a blog",
+    "link": "https://www.bol.com/nl/nl/p/strandlaken-flamingo/9200000132711854/?bltgh=h6Y6-fmq-UPOJqSngb1MgQ.2_36.40.ProductImage",
+    "price": "24,50"
+  }
+]

@@ -10,9 +10,8 @@
         <app-nav :items="items"></app-nav>
       </div>
     </div>
-    <div class="header__inner">
+    <div class="header__inner" v-if="!noImg">
       <div
-        v-if="!noImg"
         class="header__title d-flex align-items-center content-wrapper"
         :class="{ 'justify-content-center': !titleLeft }"
       >

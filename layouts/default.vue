@@ -100,6 +100,7 @@ main {
   }
 
   &__list {
+    list-style: none;
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -116,7 +117,7 @@ main {
         height: 6px;
         background: var(--color-light);
         position: absolute;
-        top: 10px;
+        top: 8px;
         left: 0;
         border-radius: 100%;
       }
