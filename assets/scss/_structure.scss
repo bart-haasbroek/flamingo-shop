@@ -12,6 +12,12 @@ html {
   }
 }
 
+.responsive-pagination {
+  .VueCarousel-pagination {
+    display: none;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -53,4 +59,12 @@ img {
 .page-enter,
 .page-leave-to {
   opacity: 0;
+}
+
+@media screen and (max-width: 787px) {
+  .responsive-pagination {
+    .VueCarousel-pagination {
+      display: block;
+    }
+  }
 }

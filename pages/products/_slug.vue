@@ -6,27 +6,47 @@
         <div class="product">
           <div class="product__image">
             <div class="product__active-image">
-              <!-- <nuxt-img
-                src="https://nuxtjs.org/img/home/discover/partners/partners-illustration.svg"
-              /> -->
               <nuxt-img sm:200px md:400px lg:800px :src="activeProduct" quality="75" />
             </div>
             <div
               class="product__thumbs-wrapper"
               v-if="product.images.length > 0"
             >
-              <app-grid columns="3" spacing="15">
+
+
+            <carousel
+              class="responsive-pagination"
+              :per-page="3"
+              :navigationEnabled="true"
+              :paginationEnabled="true"
+              :centerMode="true"
+              :scrollPerPage="false"
+              :perPageCustom="[[320, 1], [787, 3]]"
+              :paginationPosition="'bottom'"
+              :paginationSize="5"
+              >
+              <slide
+                v-for="(thumb, index) of product.images"
+                :key="index"
+              >
+              <div class="product__thumb-image" @click="setImage(thumb)">
+                <div class="product__thumb-image-holder">
+                    <nuxt-img :src="thumb" sm:100px md:200px quality="75" />
+                  </div>
+              </div>
+              </slide>
+            </carousel>
+              <!-- <app-grid columns="3" spacing="15">
                 <div
                   class="product__thumb-image"
-                  v-for="(thumb, index) of product.images"
-                  :key="index"
+                  
                   @click="setImage(thumb)"
                 >
                   <div class="product__thumb-image-holder">
                     <nuxt-img :src="thumb" sm:100px md:200px quality="75" />
                   </div>
                 </div>
-              </app-grid>
+              </app-grid> -->
             </div>
           </div>
           <div class="product__content">
@@ -98,6 +118,14 @@ export default {
 <style lang="scss" scoped>
 .stroke {
   background: #f1e3e1;
+}
+
+.VueCarousel-navigation {
+  display: none !important;
+}
+
+.VueCarousel-slide {
+  padding: 5px;
 }
 
 .product {
@@ -187,6 +215,7 @@ export default {
     }
 
     &__active-image {
+      display:none;
       width: 60%;
       margin-right: 20px;
     }
