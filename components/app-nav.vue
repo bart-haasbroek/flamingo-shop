@@ -9,7 +9,7 @@
         </li>
       </ul>
     </nav>
-    <div class="hamburger-menu" @click="openMenu()">
+    <div class="hamburger-menu" @click="menuIsOpen = !menuIsOpen">
       <div class="hamburger-center"></div>
     </div>
     <nav class="responsive-menu">
@@ -38,13 +38,6 @@ export default {
   props: {
     items: undefined,
   },
-  methods: {
-    openMenu() {
-      this.menuIsOpen = !this.menuIsOpen;
-      const overflow = this.menuIsOpen ? 'hidden' : 'scroll';
-      document.getElementsByTagName('html')[0].style.overflowY = overflow;
-    }
-  }
 };
 </script>
 
