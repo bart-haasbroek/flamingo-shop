@@ -22,7 +22,7 @@
               :centerMode="true"
               :scrollPerPage="false"
               :perPageCustom="[[320, 1], [787, 3]]"
-              :paginationPosition="'bottom'"
+              :paginationPosition="'bottom-overlay'"
               :paginationSize="5"
               >
               <slide
@@ -31,7 +31,7 @@
               >
               <div class="product__thumb-image" @click="setImage(thumb)">
                 <div class="product__thumb-image-holder">
-                    <nuxt-img :src="thumb" sm:100px md:200px quality="75" />
+                    <nuxt-img :src="thumb" md:200px quality="75" />
                   </div>
               </div>
               </slide>
@@ -137,7 +137,7 @@ export default {
   }
 
   &__image {
-    width: 40%;
+    width: 50%;
     flex-shrink: 0;
     margin-right: 30px;
   }
@@ -146,9 +146,12 @@ export default {
     border-radius: 12px;
     background: white;
     padding: 20px;
+    height: 500px;
+    display: flex;
+    align-items: center;
 
     img {
-      max-height: 500px;
+      max-height: 100%;
       margin: 0 auto;
     }
   }
@@ -174,6 +177,8 @@ export default {
     transition: border 0.3s ease;
     background: white;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 
     &:hover {
       border-color: pink;
@@ -227,6 +232,9 @@ export default {
 
     &__title {
       margin-top: 20px;
+    }
+    &__thumb-image-holder:hover {
+      border-color: transparent;
     }
   }
 }
