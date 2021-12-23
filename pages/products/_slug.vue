@@ -9,7 +9,7 @@
               <!-- <nuxt-img
                 src="https://nuxtjs.org/img/home/discover/partners/partners-illustration.svg"
               /> -->
-              <nuxt-img :src="activeProduct" />
+              <nuxt-img sm:200px md:400px lg:800px :src="activeProduct" quality="75" />
             </div>
             <div
               class="product__thumbs-wrapper"
@@ -23,7 +23,7 @@
                   @click="setImage(thumb)"
                 >
                   <div class="product__thumb-image-holder">
-                    <img :src="thumb" alt="" />
+                    <nuxt-img :src="thumb" sm:100px md:200px quality="75" />
                   </div>
                 </div>
               </app-grid>

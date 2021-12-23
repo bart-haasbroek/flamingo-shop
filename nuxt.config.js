@@ -20,10 +20,6 @@ export default {
     '@/assets/scss/index.scss'
   ],
 
-  modules: [
-    '@nuxt/image',
-  ],
-
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['~plugins/filters.js'],
 
@@ -32,7 +28,7 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    //'@nuxt/image',
+    '@nuxt/image',
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/eslint-module'
   ],

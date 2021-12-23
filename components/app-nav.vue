@@ -9,7 +9,7 @@
         </li>
       </ul>
     </nav>
-    <div class="hamburger-menu" @click="menuIsOpen = !menuIsOpen">
+    <div class="hamburger-menu" @click="openMenu()">
       <div class="hamburger-center"></div>
     </div>
     <nav class="responsive-menu">
@@ -38,6 +38,13 @@ export default {
   props: {
     items: undefined,
   },
+  methods: {
+    openMenu() {
+      this.menuIsOpen = !this.menuIsOpen;
+      const overflow = this.menuIsOpen ? 'hidden' : 'scroll';
+      document.getElementsByTagName('html')[0].style.overflowY = overflow;
+    }
+  }
 };
 </script>
 
@@ -88,14 +95,14 @@ nav.main-nav {
   width: 100vw;
   height: 100vh;
   right: -100vw;
-  top: 92px;
+  top: 55px;
   transition: all 0.4s ease;
   display: none;
   padding: 20px;
   border-top: 5px solid var(--color-dark);
 
   a {
-    font-size: 34px;
+    font-size: 28px;
     line-height: 1.5;
     font-weight: bold;
     color: var(--color-dark);
@@ -107,14 +114,15 @@ nav.main-nav {
     padding: 0;
 
     li {
+          list-style-type: none;
       border-bottom: 2px solid var(--color-dark);
     }
   }
 }
 
 .hamburger-menu {
-  width: 45px;
-  height: 35px;
+  width: 40px;
+  height: 30px;
   position: relative;
   display: none;
 
@@ -147,11 +155,11 @@ nav.main-nav {
 .menu-is-open {
   .hamburger-menu {
     &:before {
-      top: 17px;
+      top: 16px;
       transform: rotate(45deg);
     }
     &:after {
-      bottom: 12px;
+      bottom: 10px;
       transform: rotate(-45deg);
     }
 
