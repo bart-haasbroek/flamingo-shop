@@ -69,5 +69,19 @@ img {
     .VueCarousel-navigation {
       display: none;
     }
+
+    .VueCarousel-dot-container {
+      margin-top: 0 !important;
+    }
+
+    .VueCarousel-dot {
+      margin-top: 0 !important;
+      padding: 5px !important;
+      background-color: #f1786f !important;
+
+      &--active {
+        background-color: var(--color-dark) !important;
+      }
+    }
   }
 }

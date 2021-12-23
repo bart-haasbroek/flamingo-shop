@@ -4,67 +4,56 @@
     <div class="stroke">
       <div class="content-wrapper content-wrapper--narrow page-content">
         <div class="product">
-          <div class="product__image">
-            <div class="product__active-image">
-              <nuxt-img sm:200px md:400px lg:800px :src="activeProduct" quality="75" />
-            </div>
-            <div
-              class="product__thumbs-wrapper"
-              v-if="product.images.length > 0"
-            >
-
-
-            <carousel
-              class="responsive-pagination"
-              :per-page="3"
-              :navigationEnabled="true"
-              :paginationEnabled="true"
-              :centerMode="true"
-              :scrollPerPage="false"
-              :perPageCustom="[[320, 1], [787, 3]]"
-              :paginationPosition="'bottom-overlay'"
-              :paginationSize="5"
-              >
-              <slide
-                v-for="(thumb, index) of product.images"
-                :key="index"
-              >
-              <div class="product__thumb-image" @click="setImage(thumb)">
-                <div class="product__thumb-image-holder">
-                    <nuxt-img :src="thumb" md:200px quality="75" />
-                  </div>
+          <h1 class="product__title">{{ product.title }}</h1>
+          <div class="product__inner">
+            <div class="product__image">
+              <div class="product__active-image" :class="{'hide-when-responsive': product.images.length > 0}">
+                <nuxt-img sm:200px md:400px lg:800px :src="activeProduct" quality="75" />
               </div>
-              </slide>
-            </carousel>
-              <!-- <app-grid columns="3" spacing="15">
-                <div
-                  class="product__thumb-image"
-                  
-                  @click="setImage(thumb)"
-                >
-                  <div class="product__thumb-image-holder">
-                    <nuxt-img :src="thumb" sm:100px md:200px quality="75" />
+              <div
+                class="product__thumbs-wrapper"
+                v-if="product.images.length > 0"
+              >
+                <carousel
+                  class="responsive-pagination"
+                  :per-page="3"
+                  :navigationEnabled="true"
+                  :paginationEnabled="true"
+                  :centerMode="true"
+                  :scrollPerPage="false"
+                  :perPageCustom="[[320, 1], [787, 3]]"
+                  :paginationPosition="'bottom'"
+                  :paginationSize="5"
+                  >
+                  <slide
+                    v-for="(thumb, index) of product.images"
+                    :key="index"
+                  >
+                  <div class="product__thumb-image" @click="setImage(thumb)">
+                    <div class="product__thumb-image-holder">
+                        <nuxt-img :src="thumb" md:200px quality="75" />
+                      </div>
                   </div>
-                </div>
-              </app-grid> -->
+                  </slide>
+                </carousel>
+              </div>
             </div>
-          </div>
-          <div class="product__content">
-            <h1 class="product__title">{{ product.title }}</h1>
-            <div
-              class="product__description"
-              v-html="product.description"
-            ></div>
-            <div class="product__price">
-              <p>&#8364;{{ product.price }}</p>
+            <div class="product__content">
+              <div
+                class="product__description"
+                v-html="product.description"
+              ></div>
+              <div class="product__price">
+                <p>&#8364;{{ product.price }}</p>
+              </div>
+              <a
+                :href="product.link"
+                target="_blank"
+                class="button product__button"
+              >
+                Naar Bol.com
+              </a>
             </div>
-            <a
-              :href="product.link"
-              target="_blank"
-              class="button product__button"
-            >
-              Naar Bol.com
-            </a>
           </div>
         </div>
       </div>
@@ -129,11 +118,13 @@ export default {
 }
 
 .product {
-  display: flex;
-  align-items: flex-start;
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+  }
 
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
   }
 
   &__image {
@@ -213,16 +204,37 @@ export default {
 
 @media screen and (max-width: 787px) {
   .product {
-    display: block;
+    &__inner {
+      display: block;
+    }
+
+    &__title {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
     &__image {
       width: 100%;
       display: flex;
     }
 
+    &__thumb-image {
+          height: 250px;
+          padding-bottom: 0;
+    }
+
     &__active-image {
-      display:none;
-      width: 60%;
+      width: 100%;
       margin-right: 20px;
+      max-height: 250px;
+
+      &.hide-when-responsive {
+        display: none;
+      }
+    }
+
+    &__content {
+      margin-top: 20px;
     }
 
     &__thumbs-wrapper {
@@ -230,9 +242,6 @@ export default {
       flex-grow: 1;
     }
 
-    &__title {
-      margin-top: 20px;
-    }
     &__thumb-image-holder:hover {
       border-color: transparent;
     }
@@ -243,10 +252,6 @@ export default {
   .product {
     &__image {
       width: 100%;
-    }
-
-    &__active-image {
-      width: 75%;
     }
   }
 }
