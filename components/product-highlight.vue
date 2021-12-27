@@ -8,7 +8,10 @@
         {{ highlight.subtitle }}
       </p>
     </div>
-    <NuxtLink class="button product-highlight__more-button" to="/products">
+    <NuxtLink
+      class="button product-highlight__more-button"
+      :to="highlight.slug"
+    >
       {{ highlight.buttonText }}
     </NuxtLink>
     <img class="product-highlight__image" :src="highlight.image" alt="" />

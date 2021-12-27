@@ -5,18 +5,15 @@
       :image="require(`~/assets/images/flamingo-home-bg.jpg`)"
       :titleLeft="true"
     >
-      <h1>
-        Flamingo shop
-      </h1>
-      <h2>
-        De leukse flamingo spullen verzameld op een plek
-      </h2>
+      <h1>Flamingo shop</h1>
+      <h2>De leukse flamingo spullen verzameld op een plek</h2>
       <NuxtLink
         class="button button--inverted font-bold header-button"
         to="/products"
       >
         Bekijk de producten
       </NuxtLink>
+      >
     </app-header>
     <div class="content-wrapper page-content">
       <app-grid :columns="2">
@@ -48,7 +45,8 @@ export default {
           subtitle: "Het leukste cadeau voor in de koude maanden",
           image: require(`~/assets/images/flamingo-knuffel.jpeg`),
           buttonText: "Bekijk alle knuffels",
-          slug: "/products",
+          // slug: { path: 'products', query: { cat: 'knuffels' },
+          slug: { path: "products", query: { categorie: "knuffels" } },
         },
         {
           title: "Lekker creatief",
@@ -56,7 +54,7 @@ export default {
             "Even offline en creatief bezig zijn met deze flamingo producten",
           image: require(`~/assets/images/creative.jpg`),
           buttonText: "Bekijk alle producten",
-          slug: "/products",
+          slug: { path: "products", query: { categorie: "creatief" } },
         },
       ],
     };
