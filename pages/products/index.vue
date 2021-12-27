@@ -27,7 +27,24 @@
 
 <script>
 export default {
-  watchQuery: true,
+  watch: {
+    "$route.query": "$fetch",
+  },
+  async fetch() {
+    if (!!!this.$route.query) {
+      return;
+    }
+    // console.log("1234", this.$content);
+    console.log("!!!", this.$route.query.categorie);
+    // const filter = this.$route.query.categorie
+    //   ? { $containsAny: query.categorie.split(",") }
+    //   : { $contains: [] };
+    this.products = await this.$content("products")
+      .where({ categories: { $contains: [this.$route.query.categorie] } })
+      .only(["title", "description", "img", "slug", "price", "intro"])
+      .sortBy("createdAt", "asc")
+      .fetch();
+  },
   async asyncData({ $content, query }) {
     const categories = await $content("products")
       .where({ categories: { $nin: "" } })
