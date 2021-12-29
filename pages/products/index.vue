@@ -7,6 +7,9 @@
     </app-header>
     <div class="content-wrapper page-content">
       <NuxtLink to="products">Geen filter</NuxtLink>
+      <NuxtLink :to="{ path: 'products', query: { categorie: 'creatief' } }">
+        creatief</NuxtLink
+      >
       <div v-for="category of categoriesList" :key="category">
         <NuxtLink :to="{ path: 'products', query: { categorie: category } }">{{
           category
@@ -26,26 +29,53 @@
 </template>
 
 <script>
+async function getProducts(queryParam, content) {
+  const filter = queryParam
+    ? { $containsAny: queryParam.split(",") }
+    : { $contains: [] };
+  return await content("products")
+    .where({ categories: filter })
+    .only(["title", "description", "img", "slug", "price", "intro"])
+    .sortBy("createdAt", "asc")
+    .fetch();
+}
 export default {
   watch: {
-    "$route.query": "$fetch",
+    "$route.query": "method",
   },
-  async fetch() {
-    if (!!!this.$route.query) {
-      return;
-    }
-    // console.log("1234", this.$content);
-    console.log("!!!", this.$route.query.categorie);
-    // const filter = this.$route.query.categorie
-    //   ? { $containsAny: query.categorie.split(",") }
-    //   : { $contains: [] };
-    this.products = await this.$content("products")
-      .where({ categories: { $contains: [this.$route.query.categorie] } })
-      .only(["title", "description", "img", "slug", "price", "intro"])
-      .sortBy("createdAt", "asc")
-      .fetch();
+  data() {
+    return {
+      products: [],
+    };
+  },
+  methods: {
+    async method() {
+      this.products = await getProducts(
+        this.$route.query.categorie,
+        this.$content
+      );
+      const filter = this.$route.query.categorie
+        ? { $containsAny: this.$route.query.categorie.split(",") }
+        : { $contains: [] };
+      this.products = await this.$content("products")
+        .where({ categories: filter })
+        .only(["title", "description", "img", "slug", "price", "intro"])
+        .sortBy("createdAt", "asc")
+        .fetch();
+    },
+  },
+  async created() {
+    console.log("!!fet", this.$route.query);
+    this.products = await getProducts(
+      this.$route.query.categorie,
+      this.$content
+    );
   },
   async asyncData({ $content, query }) {
+    console.log("1234");
+    if (!query) {
+      return;
+    }
     const categories = await $content("products")
       .where({ categories: { $nin: "" } })
       .only(["categories"])
@@ -54,16 +84,18 @@ export default {
       const unique = product.categories.filter((c) => list.indexOf(c) === -1);
       return [...list, ...unique];
     }, []);
-    const filter = query.categorie
-      ? { $containsAny: query.categorie.split(",") }
-      : { $contains: [] };
-    const products = await $content("products")
-      .where({ categories: filter })
-      .only(["title", "description", "img", "slug", "price", "intro"])
-      .sortBy("createdAt", "asc")
-      .fetch();
+
+    // const products = await getProducts(query.categorie, $content);
+
+    // const filter = query.categorie
+    //   ? { $containsAny: query.categorie.split(",") }
+    //   : { $contains: [] };
+    // const products = await $content("products")
+    //   .where({ categories: filter })
+    //   .only(["title", "description", "img", "slug", "price", "intro"])
+    //   .sortBy("createdAt", "asc")
+    //   .fetch();
     return {
-      products,
       categoriesList,
     };
   },
