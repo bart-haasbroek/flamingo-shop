@@ -7,8 +7,17 @@
           <h1 class="product__title">{{ product.title }}</h1>
           <div class="product__inner">
             <div class="product__image">
-              <div class="product__active-image" :class="{'hide-when-responsive': product.images.length > 0}">
-                <nuxt-img sm:200px md:400px lg:800px :src="activeProduct" quality="75" />
+              <div
+                class="product__active-image"
+                :class="{ 'hide-when-responsive': product.images.length > 0 }"
+              >
+                <nuxt-img
+                  sm:200px
+                  md:400px
+                  lg:800px
+                  :src="activeProduct"
+                  quality="75"
+                />
               </div>
               <div
                 class="product__thumbs-wrapper"
@@ -21,19 +30,19 @@
                   :paginationEnabled="true"
                   :centerMode="true"
                   :scrollPerPage="false"
-                  :perPageCustom="[[320, 1], [787, 3]]"
+                  :perPageCustom="[
+                    [320, 1],
+                    [787, 3],
+                  ]"
                   :paginationPosition="'bottom'"
                   :paginationSize="5"
-                  >
-                  <slide
-                    v-for="(thumb, index) of product.images"
-                    :key="index"
-                  >
-                  <div class="product__thumb-image" @click="setImage(thumb)">
-                    <div class="product__thumb-image-holder">
+                >
+                  <slide v-for="(thumb, index) of product.images" :key="index">
+                    <div class="product__thumb-image" @click="setImage(thumb)">
+                      <div class="product__thumb-image-holder">
                         <nuxt-img :src="thumb" md:200px quality="75" />
                       </div>
-                  </div>
+                    </div>
                   </slide>
                 </carousel>
               </div>
@@ -51,7 +60,7 @@
                 target="_blank"
                 class="button product__button"
               >
-                Naar Bol.com
+                Naar {{ product.shop }}
               </a>
             </div>
           </div>
@@ -73,17 +82,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      products: "",
-      activeProduct: "",
-    };
-  },
-  created() {
-    this.activeProduct =
-      "https://nuxtjs.org/img/home/discover/partners/partners-illustration.svg";
-    this.activeProduct = this.product.img;
-  },
   async asyncData({ $content, params }) {
     const product = await $content("products", params.slug).fetch();
     const related = await $content("products")
@@ -91,9 +89,11 @@ export default {
       .only(["title", "description", "img", "slug", "price", "intro"])
       .sortBy("createdAt", "asc")
       .fetch();
+    const activeProduct = product.img;
     return {
       product,
       related,
+      activeProduct,
     };
   },
   methods: {
@@ -219,8 +219,8 @@ export default {
     }
 
     &__thumb-image {
-          height: 250px;
-          padding-bottom: 0;
+      height: 250px;
+      padding-bottom: 0;
     }
 
     &__active-image {

@@ -66,7 +66,7 @@ export default {
       xxl: 1536,
       '2xl': 1536
     },
-    domains: ['https://bol.com', 'https://media.s-bol.com', 'https:\u002F\u002Fmedia.s-bol.com', 'https://nuxtjs.org']
+    domains: ['https://bol.com', 'https://media.s-bol.com', 'https://m.media-amazon.com']
   },
 
   'google-gtag': {

@@ -6,14 +6,6 @@
       </div>
     </app-header>
     <div class="content-wrapper page-content">
-      <carousel>
-  <slide>
-    Slide 1 Content
-  </slide>
-  <slide>
-    Slide 2 Content
-  </slide>
-</carousel>
       <app-grid :columns="3">
         <blog-item
           v-for="article of articles"

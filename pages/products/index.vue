@@ -40,37 +40,25 @@ async function getProducts(queryParam, content) {
     .fetch();
 }
 export default {
-  watch: {
-    "$route.query": "method",
-  },
-  data() {
-    return {
-      products: [],
-    };
-  },
-  methods: {
-    async method() {
-      this.products = await getProducts(
-        this.$route.query.categorie,
-        this.$content
-      );
-      const filter = this.$route.query.categorie
-        ? { $containsAny: this.$route.query.categorie.split(",") }
-        : { $contains: [] };
-      this.products = await this.$content("products")
-        .where({ categories: filter })
-        .only(["title", "description", "img", "slug", "price", "intro"])
-        .sortBy("createdAt", "asc")
-        .fetch();
-    },
-  },
-  async created() {
-    console.log("!!fet", this.$route.query);
-    this.products = await getProducts(
-      this.$route.query.categorie,
-      this.$content
-    );
-  },
+  // watch: {
+  //   "$route.query": "method",
+  // },
+  // methods: {
+  //   async method() {
+  //     this.products = await getProducts(
+  //       this.$route.query.categorie,
+  //       this.$content
+  //     );
+  //     const filter = this.$route.query.categorie
+  //       ? { $containsAny: this.$route.query.categorie.split(",") }
+  //       : { $contains: [] };
+  //     this.products = await this.$content("products")
+  //       .where({ categories: filter })
+  //       .only(["title", "description", "img", "slug", "price", "intro"])
+  //       .sortBy("createdAt", "asc")
+  //       .fetch();
+  //   },
+  // },
   async asyncData({ $content, query }) {
     console.log("1234");
     if (!query) {
@@ -87,16 +75,17 @@ export default {
 
     // const products = await getProducts(query.categorie, $content);
 
-    // const filter = query.categorie
-    //   ? { $containsAny: query.categorie.split(",") }
-    //   : { $contains: [] };
-    // const products = await $content("products")
-    //   .where({ categories: filter })
-    //   .only(["title", "description", "img", "slug", "price", "intro"])
-    //   .sortBy("createdAt", "asc")
-    //   .fetch();
+    const filter = query.categorie
+      ? { $containsAny: query.categorie.split(",") }
+      : { $contains: [] };
+    const products = await $content("products")
+      .where({ categories: filter })
+      .only(["title", "description", "img", "slug", "price", "intro"])
+      .sortBy("createdAt", "asc")
+      .fetch();
     return {
       categoriesList,
+      products,
     };
   },
   transition: {
