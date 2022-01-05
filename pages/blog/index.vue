@@ -2,7 +2,7 @@
   <div>
     <app-header>
       <div>
-        <h1>Title</h1>
+        <h1>De leukste flamingo weetjes</h1>
       </div>
     </app-header>
     <div class="content-wrapper page-content">

@@ -6,7 +6,7 @@
       </div>
     </app-header>
     <div class="content-wrapper page-content">
-      <NuxtLink to="products">Geen filter</NuxtLink>
+      <NuxtLink to="/products">Geen filter</NuxtLink>
       <div v-for="category of categoriesList" :key="category">
         <NuxtLink
           :to="{ name: 'products-categorie', params: { categorie: category } }"
@@ -27,40 +27,8 @@
 </template>
 
 <script>
-async function getProducts(queryParam, content) {
-  const filter = queryParam
-    ? { $containsAny: queryParam.split(",") }
-    : { $contains: [] };
-  return await content("products")
-    .where({ categories: filter })
-    .only(["title", "description", "img", "slug", "price", "intro"])
-    .sortBy("createdAt", "asc")
-    .fetch();
-}
 export default {
-  // watch: {
-  //   "$route.query": "method",
-  // },
-  // methods: {
-  //   async method() {
-  //     this.products = await getProducts(
-  //       this.$route.query.categorie,
-  //       this.$content
-  //     );
-  //     const filter = this.$route.query.categorie
-  //       ? { $containsAny: this.$route.query.categorie.split(",") }
-  //       : { $contains: [] };
-  //     this.products = await this.$content("products")
-  //       .where({ categories: filter })
-  //       .only(["title", "description", "img", "slug", "price", "intro"])
-  //       .sortBy("createdAt", "asc")
-  //       .fetch();
-  //   },
-  // },
-  async asyncData({ $content, query }) {
-    if (!query) {
-      return;
-    }
+  async asyncData({ $content, params }) {
     const categories = await $content("products")
       .where({ categories: { $nin: "" } })
       .only(["categories"])
@@ -70,13 +38,8 @@ export default {
       return [...list, ...unique];
     }, []);
 
-    // const products = await getProducts(query.categorie, $content);
-
-    const filter = query.categorie
-      ? { $containsAny: query.categorie.split(",") }
-      : { $contains: [] };
     const products = await $content("products")
-      .where({ categories: filter })
+      .where({ categories: { $contains: [params.categorie] } })
       .only(["title", "description", "img", "slug", "price", "intro"])
       .sortBy("createdAt", "asc")
       .fetch();

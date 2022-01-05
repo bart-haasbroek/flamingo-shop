@@ -45,8 +45,11 @@ export default {
           subtitle: "Het leukste cadeau voor in de koude maanden",
           image: require(`~/assets/images/flamingo-knuffel.jpeg`),
           buttonText: "Bekijk alle knuffels",
-          // slug: { path: 'products', query: { cat: 'knuffels' },
-          slug: { path: "products", query: { categorie: "knuffels" } },
+          // slug: { path: 'products', query: { categorie: 'knuffels' },
+          slug: {
+            name: "products-categorie",
+            params: { categorie: "knuffels" },
+          },
         },
         {
           title: "Lekker creatief",
@@ -54,7 +57,10 @@ export default {
             "Even offline en creatief bezig zijn met deze flamingo producten",
           image: require(`~/assets/images/creative.jpg`),
           buttonText: "Bekijk alle producten",
-          slug: { path: "products", query: { categorie: "creatief" } },
+          slug: {
+            name: "products-categorie",
+            params: { categorie: "creatief" },
+          },
         },
       ],
     };
