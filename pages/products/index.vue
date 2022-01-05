@@ -2,16 +2,25 @@
   <div>
     <app-header>
       <div>
-        <h1>Flamingo shop</h1>
+        <h1>Flamingo spullen</h1>
       </div>
     </app-header>
     <div class="content-wrapper page-content">
-      <NuxtLink to="products">Geen filter</NuxtLink>
-      <div v-for="category of categoriesList" :key="category">
-        <NuxtLink
-          :to="{ name: 'products-categorie', params: { categorie: category } }"
-          >{{ category }}</NuxtLink
+      <div class="category-nav__title font-bold">Zoek per categorie:</div>
+      <div class="category-nav">
+        <NuxtLink class="button button--inverted font-bold" to="/products"
+          >Geen filter</NuxtLink
         >
+        <div v-for="category of categoriesList" :key="category">
+          <NuxtLink
+            class="button button--inverted font-bold"
+            :to="{
+              name: 'products-categorie',
+              params: { categorie: category },
+            }"
+            >{{ category }}
+          </NuxtLink>
+        </div>
       </div>
       <div class="products">
         <app-grid columns="4">
@@ -97,6 +106,21 @@ export default {
 // .page-content {
 //   display: flex;
 // }
+
+.category-nav {
+  display: flex;
+  padding: 20px 0;
+
+  .button {
+    margin-right: 10px;
+    background-color: pink;
+
+    &.nuxt-link-exact-active {
+      background-color: var(--color-dark);
+      color: white;
+    }
+  }
+}
 
 .products {
   flex-grow: 1;

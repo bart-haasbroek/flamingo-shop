@@ -60,9 +60,9 @@ export default {
           key: "blog",
         },
         {
-          label: "Shop",
+          label: "spullen",
           slug: "/products",
-          key: "shop",
+          key: "spullen",
         },
       ],
     };
