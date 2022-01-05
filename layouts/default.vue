@@ -7,9 +7,7 @@
       <div class="content-wrapper">
         <app-grid :columns="3">
           <div class="footer__col">
-            <h4 class="footer__title">
-              Laatste blogs
-            </h4>
+            <h4 class="footer__title">Laatste blogs</h4>
             <ul class="footer__list">
               <li v-for="article of articles" :key="article.slug">
                 <NuxtLink
@@ -20,28 +18,17 @@
             </ul>
           </div>
           <div class="footer__col">
-            <h4 class="footer__title">
-              Over ons
-            </h4>
+            <h4 class="footer__title">Over ons</h4>
             <ul class="footer__list">
-              <li>
-                <NuxtLink to="/wie-zijn-wij">Wie zijn wij</NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/faq">Veelgestelde vragen</NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/wie-zijn-wij">Contact</NuxtLink>
-              </li>
-              <li>
-                <NuxtLink to="/wie-zijn-wij">Disclaimer</NuxtLink>
+              <li v-for="(page, index) of aboutLinks" :key="'about-' + index">
+                <NuxtLink :to="{ name: 'slug', params: { slug: page.slug } }"
+                  >{{ page.title }}
+                </NuxtLink>
               </li>
             </ul>
           </div>
-          <div class="footer__col">
-            <h4 class="footer__title">
-              Partner shops
-            </h4>
+          <!-- <div class="footer__col">
+            <h4 class="footer__title">Partner shops</h4>
             <ul class="footer__list">
               <li>
                 <a href="#">title</a>
@@ -53,7 +40,7 @@
                 <a href="#">title</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </app-grid>
       </div>
     </footer>
@@ -65,6 +52,20 @@ export default {
   data() {
     return {
       articles: undefined,
+      aboutLinks: [
+        {
+          title: "Wie zijn wij",
+          slug: "wie-zijn-wij",
+        },
+        {
+          title: "Veelgestelde vragen",
+          slug: "veelgestelde-vragen",
+        },
+        {
+          title: "Disclaimer",
+          slug: "wie-zijn-wij",
+        },
+      ],
     };
   },
   async fetch() {

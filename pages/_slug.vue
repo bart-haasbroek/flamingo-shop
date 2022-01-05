@@ -5,7 +5,7 @@
         <h1>{{ page.title }}</h1>
       </div>
     </app-header>
-    <article class="content-wrapper page-content">
+    <article class="content-wrapper content-wrapper--narrow page-content">
       <nuxt-content :document="page" />
     </article>
   </div>
@@ -32,11 +32,14 @@ export default {
       ],
     };
   },
-  async asyncData({ $content }) {
-    const page = await $content("pages")
-      .where({ slug: "faq" })
-      .fetch();
-    return { page: page[0] };
+  async asyncData({ $content, params }) {
+    const page = await $content("pages", params.slug).fetch();
+    return {
+      page: {
+        ...page,
+        tocy: page.toc,
+      },
+    };
   },
 };
 </script>

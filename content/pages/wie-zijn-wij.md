@@ -3,14 +3,12 @@ title: Wie zijn wij
 img: https://www.digitalbart.nl/wptest/wp-content/uploads/2020/06/H2x1_Amiibo_main.jpg
 ---
 
-## Eerste kopje
+## Over ons
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia justo ipsum, at finibus tortor convallis aliquet. Nullam nibh augue, blandit nec massa ut, varius placerat tellus. Ut dapibus posuere odio. In sed rutrum est, sit amet maximus tortor. Maecenas malesuada tortor eu risus aliquet tincidunt. Quisque tempor, erat at egestas hendrerit, nisl urna rutrum leo, eu sagittis magna lorem non ex. Vestibulum eget ipsum id sem consequat fringilla.
+Op flamingospullen.nl vind je het allerlei soorten famingospullen. Onze site is een verzameloverzicht van flamingospullen die online te koop zijn. We zijn dus zelf geen winkel en verkopen zelf geen producten, maar linken je alleen door naar de shop waar je het product kan aanschaffen.
 
-Vivamus sapien ligula, vehicula et fringilla quis, fringilla id ex. Nulla aliquam vel arcu scelerisque sagittis. Morbi mollis, ex eget pharetra blandit, tortor leo facilisis metus, a faucibus velit tortor quis lectus. Donec sed pretium elit. Etiam vitae ante mauris. Mauris ut scelerisque elit, sit amet scelerisque risus. Vestibulum non ullamcorper leo. Etiam dapibus ex leo, et faucibus sapien mollis vitae. Duis iaculis pulvinar neque, porttitor sollicitudin diam sodales ut. Aliquam ac feugiat arcu, quis commodo risus. Morbi a sapien mauris. Nam aliquam erat nulla, ac suscipit tellus fringilla a.
+Om jou te helpen bij de zoektocht naar het perfecte product bieden we je de mogelijkheid om te zoeken op categorie. Dit wordt regelmatig uitgebreid met filters zodat je binnenkort ook kan zoeken op prijs of webshop. Zo kun jij heel gericht zoeken naar het flamingoproduct waar jij naar op zoek bent.
 
-#### Tweede kopje
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia justo ipsum, at finibus tortor convallis aliquet. Nullam nibh augue, blandit nec massa ut, varius placerat tellus. Ut dapibus posuere odio. In sed rutrum est, sit amet maximus tortor. Maecenas malesuada tortor eu risus aliquet tincidunt. Quisque tempor, erat at egestas hendrerit, nisl urna rutrum leo, eu sagittis magna lorem non ex. Vestibulum eget ipsum id sem consequat fringilla.
-
-Vivamus sapien ligula, vehicula et fringilla quis, fringilla id ex. Nulla aliquam vel arcu scelerisque sagittis. Morbi mollis, ex eget pharetra blandit, tortor leo facilisis metus, a faucibus velit tortor quis lectus. Donec sed pretium elit. Etiam vitae ante mauris. Mauris ut scelerisque elit, sit amet scelerisque risus. Vestibulum non ullamcorper leo. Etiam dapibus ex leo, et faucibus sapien mollis vitae. Duis iaculis pulvinar neque, porttitor sollicitudin diam sodales ut. Aliquam ac feugiat arcu, quis commodo risus. Morbi a sapien mauris. Nam aliquam erat nulla, ac suscipit tellus fringilla a.
+Het team achter flamingospullen.nl:\
+Bart Haasbroek | oprichter\
+contact@flamingospullen.nl
