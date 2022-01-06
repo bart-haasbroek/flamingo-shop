@@ -30,7 +30,7 @@ export default {
         "intro",
         "createdAt",
       ])
-      .sortBy("createdAt", "asc")
+      .sortBy("createdAt", "desc")
       .fetch();
 
     return {

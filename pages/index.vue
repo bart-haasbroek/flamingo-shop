@@ -13,7 +13,6 @@
       >
         Bekijk de producten
       </NuxtLink>
-      >
     </app-header>
     <div class="content-wrapper page-content">
       <app-grid :columns="2">
@@ -76,7 +75,7 @@ export default {
         "intro",
         "createdAt",
       ])
-      .sortBy("createdAt", "asc")
+      .sortBy("createdAt", "desc")
       .limit(3)
       .fetch();
 

@@ -9,7 +9,7 @@
       <div class="category-nav__title font-bold">Zoek per categorie:</div>
       <div class="category-nav">
         <NuxtLink class="button button--inverted font-bold" to="/products"
-          >Geen filter</NuxtLink
+          >Alle spullen</NuxtLink
         >
         <div v-for="category of categoriesList" :key="category">
           <NuxtLink

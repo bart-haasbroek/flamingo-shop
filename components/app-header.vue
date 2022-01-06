@@ -3,7 +3,7 @@
     <div class="d-flex align-items-center header__top content-wrapper">
       <div class="header__logo">
         <NuxtLink to="/">
-          <!-- <img src="assets/images/logo.svg" alt="" /> -->
+          <nuxt-img src="/images/flamingo-spullen-logo1.png" quality="75" />
         </NuxtLink>
       </div>
       <div class="d-flex justify-content-end flex-grow-1">
@@ -82,10 +82,13 @@ export default {
   }
 
   &__logo {
-    width: 60px;
-    height: 60px;
+    width: 160px;
     cursor: pointer;
-    background: var(--color-dark);
+    // background: var(--color-dark);
+
+    img {
+      max-height: 100%;
+    }
   }
 
   h1,
