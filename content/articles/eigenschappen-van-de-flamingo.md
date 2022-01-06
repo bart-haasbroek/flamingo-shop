@@ -3,45 +3,32 @@ title: De eigenschappen van de flamingo
 intro: Waarom is flamingo roze, welke soorten zijn er, en kunnen ze eigenlijk wel vliegen? Vind de antwoorden op deze vragen op deze pagina
 author: Bart
 img: https://www.digitalbart.nl/wptest/wp-content/uploads/2020/06/H2x1_Amiibo_main.jpg
-alt: my first blog post
 ---
 
 ## Welke soorten flamingos zijn er?
 
-Er zitten 6 soorten in de flamingofamilie. Namelijk de gewone flamingo, de Chileense flamingo, de rode flamingo, de Andesflamingo, de James’ flamingo en de kleine flamingo. Het verschil tussen deze soorten is dat ze verschillen in grootte, maar ook de verschillende tinten roze en de kleur van de snavel en poten.
-Hoewel de flamingo erg op een exotische vogel lijkt die ver weg leven, zijn er toch 2 soorten in Europa te vinden. De andere soorten leven in Afrika, Azie, Amerika, onder andere op de Caribische eilanden.
+De flamingofamilie bestaat uit zes soorten: de gewone flamingo, de rode flamingo, de Chileense flamingo, de kleine flamingo, de James’ flamingo en de Andesflamingo. De familieleden zijn onder andere uit elkaar te houden door verschil in grootte, de verschillende tinten roze in het verendek en de kleur van de snavel en poten. En natuurlijk is ook het leefgebied een handige hint om te ontdekken met welke flamingosoort je te maken hebt. Twee van de vier soorten leven in Afrika, Azië en op een paar plekken in Europa, namelijk de gewone en de kleine flamingo. De andere vier soorten komen voor in Amerika, onder andere op de Caribische eilanden.
 
+## De familie van de flamingo
 
-## Uiterlijk van de flamingo
+Lange tijd werden flamingo’s onder de ooievaarachtigen geschaard, totdat uit DNA-onderzoek bleek dat er geen enkele overeenkomst tussen deze twee soorten waadvogels te bespeuren was. Daarom vallen de flamingo’s nu onder een eigen orde: Phoenicopteriformes. Uit hun DNA bleek wel dat flamingo’s vrij nauw verwant zijn aan de fuut en ook wel wat dingen gemeen hebben met de duif.
 
-### Waarom is de flamingo roze?
-Een van de opvallendste kenmerken aan de flamingo is natuurlijk zijn felle roze kleur. Maar hoe komt hij eigenlijk aan deze kleur? Dat heeft te maken met het voedsel dat hij eet. In de algjes en andere kleine beestjes zoals krabbetjes, weekdieren en wormen zitten namelijk carotenoïden, een natuurlijk kleurstof. Je zou dus kunnen zeggen dat de flamingo met de felste kleur het gezondst is, omdat die het meeste eet.
+## Waarom staan flamingo's op een poot?
 
-### Hoe groot worden flamingos?
-Zoals bij veel andere dieren zijn de mannetjes groter dan de vrouwtjes. Ze hebben een lengte van 140 tot 175 centimeter inclusief nek en kop. De ogen zijn klein en hebben een gele kleur.
-De gemiddelde flamingo heeft een spanwijdte tussen 1 en 1,6 meter
+Over de reden waarom flamingo’s op één poot in het water staan, doen meerdere verhalen de ronde. Sommigen zeggen bijvoorbeeld dat het is om hun temperatuur te reguleren. Door een poot in het water te houden, koelen flamingo’s precies voldoende af. Twee poten in het water, en de flamingo staat te bibberen in zijn verenpak. Een andere uitleg is dat de flamingo op één poot staat, zodat hij zijn andere poot kan gebruiken om uit de modder te geraken, mocht hij hierin wegzakken. Op zich verhinderen hun vier tenen met daartussen zwemvliezen dit al aardig, maar better safe than sorry! Het kost de flamingo trouwens geen enkele moeite om op één been te staan en zo staat deze vogel zelfs stabieler dan op twee poten.
 
-### Hoe oud kunnen flamingos worden?
+## Waarom is de flamingo roze?
 
-## De snavel van de flamingo
+Zijn prachtige roze kleur dankt de flamingo aan het voedsel dat hij eet. De algjes en andere kleine beestjes die hij verorbert bevatten namelijk carotenoïden, kleurstofjes van Moeder Natuur. In gevangenschap wilden de flamingo’s nog weleens een beetje bleekjes van kleur worden. Een reden voor bijvoorbeeld dierentuinen om meer carotenoïden aan hun dieet toe te voegen. De vogels met de felste kleuren zijn in de ogen van de andere flamingo’s het gezondst en vinden vaak als eerste een partner. Overigens mogen de mooist gekleurde dieren graag een potje knokken om het lekkerste hapje. Ze moeten natuurlijk wel dat kleurtje op peil houden!
 
-## kan een flamingo vliegen
-Flamingo's vliegen met hun hoofd en nek uitgestrekt naar voren en de benen achter zich aan. De vluchtsnelheid van een zwerm flamingo's kan 50 tot 60 kilometer per uur of 31 en 37 mijl per uur bedragen.
+## Hoeveel eieren legt een flamingo?
 
-Het is bekend dat ze tussen 500 en 600 kilometer vliegen, of 311 en 373 mijl, elke nacht tussen habitats.
+Over het algemeen leggen flamingo’s maar één ei dat ongeveer 100 gram weegt. Dat gebeurt in een nest gemaakt van modder. Na 28 tot 30 dagen kruipt hier een kuiken uit dat nog niet de kenmerkende roze kleur heeft, maar eerder wit tot grijs is. Papa en mama beschermen hun kroost zeer goed en het is beter om uit de buurt te blijven bij de jonge ouders.
 
-Wanneer ze opstijgen, rennen de flamingo's enkele stappen, beginnen ze met hun vleugels te klapperen en stijgen ze vervolgens de lucht in. Wanneer ze landen, is de procedure omgekeerd; ze zullen elkaar raken en vervolgens verschillende stappen uitvoeren.
+## Hoe oud kan een flamingo worden?
 
-## Wat eet een flamingo
+In het wild worden flamingo’s tussen de 20 en 30 jaar oud, maar in gevangenschap kunnen ze een zeer hoge leeftijd bereiken.
 
+## kan de flamingo vliegen?
 
-## Familie van de flamingo
-
-
-##weetjes
-
-
-Een flamingo kan alleen eten als hij op zijn kop hangt
-
-Flamingo's eten per soort verschillend. Veel kleine Flamingo's eten algen en de grotere Flamingo's eten krabbetjes, weekdieren en wormen. Het voedsel van de Flamingo wordt met de snavel uit het water gehaald. Hun snavel is net een filter. Hierin wordt het eten vastgehouden en het zand en water weggehaald. Hiervoor nemen Flamingo's met hun hoofd ondersteboven een hap water.
-
+Flamingo’s kunnen zeker vliegen! Ze hebben lange vleugels waarmee zij zich stabiel in de lucht houden. Flamingo’s kunnen heel goed zwemmen en vliegen, ook al zien we ze het vaakst op één poot staan in het water. Ze kunnen zelfs zo goed vliegen dat ze tussen verschillende locaties vliegen voor voedsel of om te broeden. Een zwerm flamingo’s kan in de lucht een topsnelheid halen van wel 56 kilometer per uur! Dat zou je niet zeggen omdat ze zo lomp en onhandig lijken in de lucht.

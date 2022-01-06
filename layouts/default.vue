@@ -61,10 +61,6 @@ export default {
           title: "Veelgestelde vragen",
           slug: "veelgestelde-vragen",
         },
-        {
-          title: "Disclaimer",
-          slug: "wie-zijn-wij",
-        },
       ],
     };
   },
