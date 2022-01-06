@@ -15,7 +15,7 @@
           <NuxtLink
             class="button button--inverted font-bold"
             :to="{
-              name: 'products-categorie',
+              name: 'products-categorie-categorie',
               params: { categorie: category },
             }"
             >{{ category }}

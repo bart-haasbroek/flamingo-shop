@@ -47,7 +47,7 @@ export default {
           buttonText: "Bekijk alle knuffels",
           // slug: { path: 'products', query: { categorie: 'knuffels' },
           slug: {
-            name: "products-categorie",
+            name: "products-categorie-categorie",
             params: { categorie: "knuffels" },
           },
         },
@@ -58,7 +58,7 @@ export default {
           image: require(`~/assets/images/creative.jpg`),
           buttonText: "Bekijk alle producten",
           slug: {
-            name: "products-categorie",
+            name: "products-categorie-categorie",
             params: { categorie: "creatief" },
           },
         },

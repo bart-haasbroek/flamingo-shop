@@ -84,6 +84,7 @@
 export default {
   async asyncData({ $content, params }) {
     const product = await $content("products", params.slug).fetch();
+    console.log("product", product);
     const related = await $content("products")
       .limit(4)
       .only(["title", "description", "img", "slug", "price", "intro"])
