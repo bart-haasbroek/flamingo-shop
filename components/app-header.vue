@@ -149,8 +149,7 @@ export default {
     }
 
     &__logo {
-      width: 35px;
-      height: 35px;
+      width: 120px;
     }
   }
 }

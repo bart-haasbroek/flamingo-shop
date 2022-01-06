@@ -88,7 +88,7 @@ nav.main-nav {
   width: 100vw;
   height: 100vh;
   right: -100vw;
-  top: 55px;
+  top: 67px;
   transition: all 0.4s ease;
   display: none;
   padding: 20px;
