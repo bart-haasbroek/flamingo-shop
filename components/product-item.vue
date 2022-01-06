@@ -18,7 +18,7 @@
       </div>
       <!-- #f1786f -->
       <div class="product-item__price">
-        <p>&#8364; {{ product.price }}</p>
+        <p>{{ product.price | price }}</p>
       </div>
     </div>
   </div>

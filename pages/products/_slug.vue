@@ -53,7 +53,7 @@
                 v-html="product.description"
               ></div>
               <div class="product__price">
-                <p>&#8364;{{ product.price }}</p>
+                <p>{{ product.price | price }}</p>
               </div>
               <a
                 :href="product.link"
@@ -84,10 +84,13 @@
 export default {
   async asyncData({ $content, params }) {
     const product = await $content("products", params.slug).fetch();
-    console.log("product", product);
     const related = await $content("products")
       .limit(4)
       .only(["title", "description", "img", "slug", "price", "intro"])
+      .where(
+        { categories: { $contains: product.categories } },
+        { slug: { $ne: product.slug } }
+      )
       .sortBy("createdAt", "asc")
       .fetch();
     const activeProduct = product.img;
