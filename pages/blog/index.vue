@@ -39,7 +39,7 @@ export default {
   },
   transition: {
     afterLeave(el) {
-      console.log("afterLeave", el);
+      //("afterLeave", el);
     },
   },
 };
