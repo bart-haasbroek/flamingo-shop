@@ -13,7 +13,7 @@
       </article>
 
       <div class="content-wrapper products">
-        <title-stroke title="Leuke flamingo producten:"></title-stroke>
+        <title-stroke :title="relatedProductsText"></title-stroke>
         <app-grid columns="4">
           <product-item
             v-for="product of products"
@@ -49,12 +49,17 @@ export default {
   },
   async asyncData({ $content, params }) {
     const article = await $content("articles", params.slug).fetch();
+    const relatedProductsText =
+      article["relatedProductsText"] || "Leuke flamingo spullen";
+    console.log("relatedProductsText", relatedProductsText);
+    const categorie = article["category"] ? [article["category"]] : [];
     const products = await $content("products")
       .limit(4)
+      .where({ categories: { $contains: categorie } })
       .only(["title", "description", "img", "slug", "price", "intro"])
       .sortBy("createdAt", "asc")
       .fetch();
-    return { article, products };
+    return { article, products, relatedProductsText };
   },
 };
 </script>

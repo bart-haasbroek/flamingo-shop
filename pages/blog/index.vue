@@ -32,7 +32,6 @@ export default {
       ])
       .sortBy("createdAt", "desc")
       .fetch();
-
     return {
       articles,
     };

@@ -1,3 +1,6 @@
+import fs from 'fs'
+import path from 'path'
+import fetch from "node-fetch";
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -43,7 +46,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/google-gtag'
+    '@nuxtjs/google-gtag',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
