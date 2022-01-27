@@ -14,7 +14,12 @@
     >
       {{ highlight.buttonText }}
     </NuxtLink>
-    <img class="product-highlight__image" :src="highlight.image" alt="" />
+    <nuxt-img
+      class="product-highlight__image"
+      :src="highlight.image"
+      quality="60"
+    />
+    <!-- <img class="product-highlight__image" :src="highlight.image" alt="" /> -->
   </div>
 </template>
 

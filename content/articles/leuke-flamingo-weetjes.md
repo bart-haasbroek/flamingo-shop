@@ -2,7 +2,7 @@
 title: Leuke flamingo weetjes
 intro: Wist jij al deze dingen over de flamingo?
 author: Bart
-img: https://www.digitalbart.nl/wptest/wp-content/uploads/2020/06/H2x1_Amiibo_main.jpg
+img: ./images/creative.jpg
 ---
 
 ## Waar komt de naam flamingo vandaan

@@ -2,7 +2,7 @@
   <div class="blog-item" v-if="item">
     <div class="blog-item__image">
       <NuxtLink :to="{ name: 'blog-slug', params: { slug: item.slug } }">
-        <img :src="item.img" alt="" />
+        <nuxt-img :src="item.img" quality="60" />
       </NuxtLink>
     </div>
     <div class="blog-item__inner">

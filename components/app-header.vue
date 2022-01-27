@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="header__image">
-        <img :src="image" />
+        <nuxt-img :src="image" quality="60" />
       </div>
     </div>
   </header>
@@ -43,7 +43,7 @@ export default {
     },
     image: {
       type: String,
-      default: require(`~/assets/images/flamingo-home-bg.jpg`),
+      default: "./images/flamingo-home-bg.jpg",
     },
   },
   data() {

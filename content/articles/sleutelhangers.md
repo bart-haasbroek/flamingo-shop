@@ -4,7 +4,7 @@ intro: Alles over de sleutelhanger
 author: Bart
 category: sleutelhangers
 relatedProductsText: Leuke flamingo sleutelhangers
-img: https://www.digitalbart.nl/wptest/wp-content/uploads/2020/06/H2x1_Amiibo_main.jpg
+img: ./images/creative.jpg
 ---
 
 ## Sleutelhangers

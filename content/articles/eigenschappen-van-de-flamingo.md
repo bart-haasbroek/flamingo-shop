@@ -2,7 +2,7 @@
 title: De eigenschappen van de flamingo
 intro: Waarom is flamingo roze, welke soorten zijn er, en kunnen ze eigenlijk wel vliegen? Vind de antwoorden op deze vragen op deze pagina
 author: Bart
-img: https://www.digitalbart.nl/wptest/wp-content/uploads/2020/06/H2x1_Amiibo_main.jpg
+img: ./images/creative.jpg
 ---
 
 ## Welke soorten flamingos zijn er?

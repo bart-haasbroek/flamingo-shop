@@ -2,7 +2,7 @@
   <div>
     <app-header
       :isBig="true"
-      :image="require(`~/assets/images/flamingo-home-bg.jpg`)"
+      image="./images/flamingo-home-bg.jpg"
       :titleLeft="true"
     >
       <h1>Flamingo shop</h1>
@@ -42,7 +42,7 @@ export default {
         {
           title: "De warmste knuffels",
           subtitle: "Het leukste cadeau voor in de koude maanden",
-          image: require(`~/assets/images/flamingo-knuffel.jpeg`),
+          image: "./images/flamingo-knuffel.jpeg",
           buttonText: "Bekijk alle knuffels",
           // slug: { path: 'products', query: { categorie: 'knuffels' },
           slug: {
@@ -54,7 +54,7 @@ export default {
           title: "Lekker creatief",
           subtitle:
             "Even offline en creatief bezig zijn met deze flamingo producten",
-          image: require(`~/assets/images/creative.jpg`),
+          image: "./images/creative.jpg",
           buttonText: "Bekijk alle producten",
           slug: {
             name: "products-categorie-categorie",
