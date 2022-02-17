@@ -7,11 +7,11 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'blog',
+    title: 'Flamingo spullen',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'Flamingospullen verzamelt de leukste flamingo spullen uit allerlei verschillende webshops. Bekijk en koop het leukste flamingoproduct, van sleutelhangers tot knuffels' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -36,9 +36,20 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     '@nuxt/image',
+    '@nuxtjs/sitemap'
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/eslint-module'
   ],
+
+  sitemap: {
+    hostname: 'https://flamingospullen.nl',
+    gzip: true,
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+    }
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [

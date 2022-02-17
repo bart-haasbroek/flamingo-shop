@@ -37,6 +37,18 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: `flamingospullen: ${this.categorie}`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `De leukste flamingospullen in de categorie ${this.categorie}.`,
+        },
+      ],
+    };
+  },
   async asyncData({ $content, params }) {
     const categories = await $content("products")
       .where({ categories: { $nin: "" } })

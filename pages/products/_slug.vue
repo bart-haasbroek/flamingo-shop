@@ -81,7 +81,24 @@
 </template>
 
 <script>
+function buildTitle(title) {
+  return title.replace(/-/g, " ");
+}
 export default {
+  head() {
+    return {
+      title: buildTitle(this.product.slug),
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `${buildTitle(
+            this.product.slug
+          )}, bekijk dit flamingo product en vele andere leuke flamingospullen nu op flamingospullen.nl`,
+        },
+      ],
+    };
+  },
   async asyncData({ $content, params }) {
     const product = await $content("products", params.slug).fetch();
     const related = await $content("products")
