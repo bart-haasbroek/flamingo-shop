@@ -11,6 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name='google-site-verification', content: 'v4HcYBFHLCpBE0wCPFdQFD2II01lUqxUo5QjTZ0db9k' },
       { hid: 'description', name: 'description', content: 'Flamingospullen verzamelt de leukste flamingo spullen uit allerlei verschillende webshops. Bekijk en koop het leukste flamingoproduct, van sleutelhangers tot knuffels' }
     ],
     link: [
